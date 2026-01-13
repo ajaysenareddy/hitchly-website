@@ -30,7 +30,7 @@ const Features = () => {
         <section id="features" className="section features-section container">
             <div className="text-center" style={{ maxWidth: '700px', margin: '0 auto' }}>
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--color-secondary)', fontWeight: 700 }}>
-                    Carpooling Made <span className="text-primary">Simple</span>
+                    Easy, Safe & <span className="text-primary">Efficient</span>
                 </h2>
                 <p style={{ color: 'var(--color-text-light)', fontSize: '1.15rem' }}>
                     Everything you need to commute confidently and efficiently.

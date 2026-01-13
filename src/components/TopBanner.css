@@ -1,0 +1,29 @@
+.top-banner {
+    background-color: var(--color-secondary);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-banner strong {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* Push navbar down */
+/* This class will be toggled or applied to navbar */
+.navbar-with-banner {
+    top: 40px;
+    /* Approximate height of banner */
+}

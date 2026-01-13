@@ -8,36 +8,55 @@ const Hero = () => {
             <div className="hero-content">
                 <div className="hero-text fade-in-up">
                     <div className="hero-tag">
-                        <ShieldCheck size={18} /> Official Mobility Partner of TEDxSMEC
+                        <ShieldCheck size={18} /> Launching Live at TEDxSMEC
                     </div>
                     <h1>
-                        Your Daily Commute,<br />
-                        <span>Reimagined.</span>
+                        Easy, Safe & Efficient<br />
+                        <span>Carpooling.</span>
                     </h1>
                     <p>
-                        Connect with verified professionals and students for a safe, efficient, and eco-friendly carpooling experience. Hitchly is now in open Beta.
+                        Experience the future of mobility. Hitchly connects you with verified peers for safe and affordable rides.
+                        <br /><br />
+                        <strong>We are launching our Beta exclusively at TEDxSMEC.</strong> Enter your email to get early access.
                     </p>
-                    <div className="hero-actions">
-                        <a href="#join" className="btn btn-primary">
-                            Download Beta App <ArrowRight size={18} style={{ marginLeft: '8px' }} />
-                        </a>
-                        <a href="#features" className="btn btn-secondary">
-                            How it Works
-                        </a>
+
+                    <div className="hero-actions" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '1rem' }}>
+                        <form onSubmit={(e) => e.preventDefault()} style={{ display: 'flex', gap: '10px', width: '100%', maxWidth: '480px', flexWrap: 'wrap' }}>
+                            <input
+                                type="email"
+                                placeholder="Enter your email for Beta Access"
+                                style={{
+                                    flex: 1,
+                                    padding: '16px 24px',
+                                    borderRadius: '50px',
+                                    border: '1px solid #E0E0E0',
+                                    outline: 'none',
+                                    fontSize: '1rem',
+                                    minWidth: '240px',
+                                    boxShadow: '0 4px 6px rgba(0,0,0,0.03)'
+                                }}
+                            />
+                            <button className="btn btn-primary" type="submit">
+                                Notify Me <ArrowRight size={18} style={{ marginLeft: '8px' }} />
+                            </button>
+                        </form>
+                        <span style={{ fontSize: '0.85rem', color: '#607D8B', marginLeft: '12px', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                            <UserCheck size={14} /> Join 500+ students on the waitlist
+                        </span>
                     </div>
 
                     <div className="hero-stats">
                         <div className="stat-item">
+                            <h3>TEDxSMEC</h3>
+                            <p>Official Launch</p>
+                        </div>
+                        <div className="stat-item">
                             <h3>100%</h3>
-                            <p>Verified Users</p>
+                            <p>Verified Profiles</p>
                         </div>
                         <div className="stat-item">
-                            <h3>Trusted</h3>
-                            <p>Community</p>
-                        </div>
-                        <div className="stat-item">
-                            <h3>Safe</h3>
-                            <p>Secure Rides</p>
+                            <h3>Beta</h3>
+                            <p>Early Access</p>
                         </div>
                     </div>
                 </div>
@@ -67,9 +86,21 @@ const Hero = () => {
                                 gap: '15px'
                             }}>
                                 {/* UI Mockup elements */}
-                                <div style={{ height: '40px', background: '#F0FDF4', borderRadius: '8px', width: '100%' }}></div>
-                                <div style={{ height: '100px', background: '#F3F4F6', borderRadius: '8px', width: '100%' }}></div>
-                                <div style={{ height: '60px', background: '#F9FAFB', borderRadius: '8px', width: '100%' }}></div>
+                                <div style={{
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    alignItems: 'center',
+                                    marginBottom: '10px'
+                                }}>
+                                    <div style={{ height: '12px', width: '40px', background: '#CFD8DC', borderRadius: '4px' }}></div>
+                                    <div style={{ height: '24px', width: '24px', background: '#ECEFF1', borderRadius: '50%' }}></div>
+                                </div>
+
+                                <div style={{ height: '40px', background: '#F0FDF4', borderRadius: '8px', width: '100%', display: 'flex', alignItems: 'center', padding: '0 15px', color: '#1B5E20', fontSize: '10px', fontWeight: 'bold' }}>
+                                    Ofifcial Partner: TEDxSMEC
+                                </div>
+                                <div style={{ height: '80px', background: '#F3F4F6', borderRadius: '8px', width: '100%' }}></div>
+                                <div style={{ height: '40px', background: '#F9FAFB', borderRadius: '8px', width: '100%' }}></div>
                             </div>
 
                             {/* Decoration Element */}
@@ -84,8 +115,8 @@ const Hero = () => {
                                 <Search size={20} color="#00C853" />
                             </div>
                             <div>
-                                <div style={{ fontSize: '12px', color: '#757575' }}>Find a Ride</div>
-                                <div style={{ fontWeight: 'bold', fontSize: '14px' }}>Near You</div>
+                                <div style={{ fontSize: '12px', color: '#757575' }}>Launching at</div>
+                                <div style={{ fontWeight: 'bold', fontSize: '14px' }}>TEDxSMEC</div>
                             </div>
                         </div>
 
@@ -94,8 +125,8 @@ const Hero = () => {
                                 <UserCheck size={20} color="#1565C0" />
                             </div>
                             <div>
-                                <div style={{ fontSize: '12px', color: '#757575' }}>Verified</div>
-                                <div style={{ fontWeight: 'bold', fontSize: '14px' }}>Trusted Profiles</div>
+                                <div style={{ fontSize: '12px', color: '#757575' }}>First Access</div>
+                                <div style={{ fontWeight: 'bold', fontSize: '14px' }}>Join Waitlist</div>
                             </div>
                         </div>
 

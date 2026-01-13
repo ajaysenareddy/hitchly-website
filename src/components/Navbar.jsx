@@ -16,7 +16,7 @@ const Navbar = () => {
           <a href="#safety" className="nav-link">Safety</a>
         </div>
         <div className="nav-cta">
-          <a href="#join" className="btn btn-primary">Get Early Access</a>
+          <a href="#join" className="btn btn-primary">Join Waitlist</a>
         </div>
       </div>
     </nav>
