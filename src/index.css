@@ -1,24 +1,28 @@
 :root {
   --color-primary: #00C853;
   --color-primary-dark: #009624;
-  --color-secondary: #0D1B2A; /* Dark navy */
-  --color-text-main: #1F2937;
-  --color-text-light: #6B7280;
-  --color-bg-light: #F3F4F6;
+  --color-secondary: #0A0F1C;
+  /* Darker, richer navy */
+  --color-text-main: #111827;
+  --color-text-light: #4B5563;
+  --color-bg-light: #F9FAFB;
   --color-white: #ffffff;
   --font-family: 'Poppins', sans-serif;
-  
+
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
-  --spacing-xl: 6rem;
+  --spacing-xl: 8rem;
+  /* More generous spacing */
 
-  --border-radius: 16px;
-  --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
-  --shadow-md: 0 10px 15px rgba(0,0,0,0.1);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --transition: all 0.3s ease;
+  --border-radius: 24px;
+  /* More modern rounded corners */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Smoother ease */
 }
 
 * {
@@ -61,8 +65,13 @@ img {
   width: 100%;
 }
 
-.text-primary { color: var(--color-primary); }
-.text-center { text-align: center; }
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-center {
+  text-align: center;
+}
 
 .btn {
   display: inline-flex;
@@ -124,6 +133,7 @@ img {
     --spacing-xl: 4rem;
     --spacing-lg: 3rem;
   }
+
   .container {
     padding: 0 1.5rem;
   }

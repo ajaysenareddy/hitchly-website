@@ -13,10 +13,9 @@ const Navbar = () => {
         <div className="nav-links">
           <a href="#features" className="nav-link">Features</a>
           <a href="#sponsorship" className="nav-link">TEDxSMEC</a>
-          <a href="#safety" className="nav-link">Safety</a>
+
         </div>
         <div className="nav-cta">
-          <a href="#join" className="btn btn-primary">Join Waitlist</a>
         </div>
       </div>
     </nav>

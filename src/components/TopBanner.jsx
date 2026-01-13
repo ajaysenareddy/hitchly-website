@@ -4,7 +4,7 @@ import './TopBanner.css';
 const TopBanner = () => {
     return (
         <div className="top-banner">
-            <span>OFFICIAL LAUNCH PARTNER: <strong>TEDxSMEC</strong>. Join the waitlist for exclusive Beta access.</span>
+            <span>OFFICIAL LAUNCH PARTNER: <strong>TEDxSMEC</strong>. Coming Soon.</span>
         </div>
     );
 };

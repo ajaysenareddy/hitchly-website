@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, ShieldCheck, MapPin, Search, UserCheck } from 'lucide-react';
+import { ShieldCheck, MapPin, Search, UserCheck } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -17,32 +17,23 @@ const Hero = () => {
                     <p>
                         Experience the future of mobility. Hitchly connects you with verified peers for safe and affordable rides.
                         <br /><br />
-                        <strong>We are launching our Beta exclusively at TEDxSMEC.</strong> Enter your email to get early access.
+                        <strong>We are launching our Beta exclusively at TEDxSMEC.</strong>
                     </p>
 
-                    <div className="hero-actions" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '1rem' }}>
-                        <form onSubmit={(e) => e.preventDefault()} style={{ display: 'flex', gap: '10px', width: '100%', maxWidth: '480px', flexWrap: 'wrap' }}>
-                            <input
-                                type="email"
-                                placeholder="Enter your email for Beta Access"
-                                style={{
-                                    flex: 1,
-                                    padding: '16px 24px',
-                                    borderRadius: '50px',
-                                    border: '1px solid #E0E0E0',
-                                    outline: 'none',
-                                    fontSize: '1rem',
-                                    minWidth: '240px',
-                                    boxShadow: '0 4px 6px rgba(0,0,0,0.03)'
-                                }}
-                            />
-                            <button className="btn btn-primary" type="submit">
-                                Notify Me <ArrowRight size={18} style={{ marginLeft: '8px' }} />
-                            </button>
-                        </form>
-                        <span style={{ fontSize: '0.85rem', color: '#607D8B', marginLeft: '12px', display: 'flex', alignItems: 'center', gap: '5px' }}>
-                            <UserCheck size={14} /> Join 500+ students on the waitlist
-                        </span>
+                    <div className="hero-actions" style={{ marginBottom: '2rem' }}>
+                        <div style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '12px',
+                            background: 'rgba(0, 200, 83, 0.08)',
+                            padding: '12px 24px',
+                            borderRadius: '16px',
+                            border: '1px solid rgba(0, 200, 83, 0.2)'
+                        }}>
+                            <span style={{ fontWeight: 700, color: '#00C853', fontSize: '1.1rem', letterSpacing: '-0.5px' }}>Coming Soon</span>
+                            <div style={{ height: '20px', width: '2px', background: 'rgba(0, 200, 83, 0.2)' }}></div>
+                            <span style={{ color: '#0A0F1C', fontWeight: 500 }}>Live at TEDxSMEC</span>
+                        </div>
                     </div>
 
                     <div className="hero-stats">
@@ -97,7 +88,7 @@ const Hero = () => {
                                 </div>
 
                                 <div style={{ height: '40px', background: '#F0FDF4', borderRadius: '8px', width: '100%', display: 'flex', alignItems: 'center', padding: '0 15px', color: '#1B5E20', fontSize: '10px', fontWeight: 'bold' }}>
-                                    Ofifcial Partner: TEDxSMEC
+                                    Official Partner: TEDxSMEC
                                 </div>
                                 <div style={{ height: '80px', background: '#F3F4F6', borderRadius: '8px', width: '100%' }}></div>
                                 <div style={{ height: '40px', background: '#F9FAFB', borderRadius: '8px', width: '100%' }}></div>
@@ -125,8 +116,8 @@ const Hero = () => {
                                 <UserCheck size={20} color="#1565C0" />
                             </div>
                             <div>
-                                <div style={{ fontSize: '12px', color: '#757575' }}>First Access</div>
-                                <div style={{ fontWeight: 'bold', fontSize: '14px' }}>Join Waitlist</div>
+                                <div style={{ fontSize: '12px', color: '#757575' }}>Trusted</div>
+                                <div style={{ fontWeight: 'bold', fontSize: '14px' }}>Student Community</div>
                             </div>
                         </div>
 

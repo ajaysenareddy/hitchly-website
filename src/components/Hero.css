@@ -44,13 +44,14 @@
     margin-bottom: 1.5rem;
     color: var(--color-secondary);
     font-weight: 700;
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
 }
 
 .hero h1 span {
     color: var(--color-primary);
     background: linear-gradient(120deg, var(--color-primary) 0%, #00E676 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
