@@ -1,0 +1,102 @@
+.sponsorship-section {
+    background: var(--color-secondary);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 8rem 0;
+    margin: 4rem 0;
+}
+
+/* Background Pattern */
+.sponsorship-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 20%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 20%);
+}
+
+.sponsorship-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.sponsor-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sponsor-label {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.sponsorship-section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.sponsorship-section p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 3.5rem;
+    line-height: 1.6;
+}
+
+.sponsor-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.logo-divider {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.logo-box {
+    background: white;
+    color: black;
+    padding: 1.5rem 3rem;
+    border-radius: 16px;
+    font-weight: 800;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.logo-box:hover {
+    transform: scale(1.05);
+}
+
+.tedx-logo span {
+    color: #E62B1E;
+    /* TED Red */
+}
+
+.hitchly-logo {
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .sponsorship-section h2 {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,130 @@
+:root {
+  --color-primary: #00C853;
+  --color-primary-dark: #009624;
+  --color-secondary: #0D1B2A; /* Dark navy */
+  --color-text-main: #1F2937;
+  --color-text-light: #6B7280;
+  --color-bg-light: #F3F4F6;
+  --color-white: #ffffff;
+  --font-family: 'Poppins', sans-serif;
+  
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+
+  --border-radius: 16px;
+  --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
+  --shadow-md: 0 10px 15px rgba(0,0,0,0.1);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-white);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Utilities */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+  width: 100%;
+}
+
+.text-primary { color: var(--color-primary); }
+.text-center { text-align: center; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: var(--transition);
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 8px 20px rgba(0, 200, 83, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 200, 83, 0.4);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-text-main);
+  border: 1px solid #E5E7EB;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+/* Animation utilities */
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-xl: 4rem;
+    --spacing-lg: 3rem;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+}
