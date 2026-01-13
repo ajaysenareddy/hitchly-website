@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, MapPin, Search, UserCheck } from 'lucide-react';
+import { ShieldCheck, MapPin, Search, UserCheck, Car } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -54,73 +54,73 @@ const Hero = () => {
 
                 <div className="hero-image-wrapper fade-in-up" style={{ animationDelay: '0.2s' }}>
                     <div className="hero-visual">
-                        {/* This would be a high quality screenshot in production. Using a Mockup representation */}
-                        <div style={{
-                            width: '100%',
-                            height: '100%',
-                            background: '#fafafa',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            position: 'relative'
-                        }}>
-                            <div style={{
-                                width: '80%',
-                                height: '60%',
-                                background: 'white',
-                                borderRadius: '16px',
-                                boxShadow: '0 10px 25px rgba(0,0,0,0.05)',
-                                padding: '20px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: '15px'
-                            }}>
-                                {/* UI Mockup elements */}
-                                <div style={{
-                                    display: 'flex',
-                                    justifyContent: 'space-between',
-                                    alignItems: 'center',
-                                    marginBottom: '10px'
-                                }}>
-                                    <div style={{ height: '12px', width: '40px', background: '#CFD8DC', borderRadius: '4px' }}></div>
-                                    <div style={{ height: '24px', width: '24px', background: '#ECEFF1', borderRadius: '50%' }}></div>
+                        {/* High Fidelity App UI Mockup */}
+                        <div className="app-interface">
+                            {/* App Header */}
+                            <div className="app-header">
+                                <div className="app-time">9:41</div>
+                                <div className="app-status">
+                                    <div className="status-dot"></div>
+                                    <div className="status-signal"></div>
+                                    <div className="status-battery"></div>
                                 </div>
+                            </div>
 
-                                <div style={{ height: '40px', background: '#F0FDF4', borderRadius: '8px', width: '100%', display: 'flex', alignItems: 'center', padding: '0 15px', color: '#1B5E20', fontSize: '10px', fontWeight: 'bold' }}>
-                                    Official Partner: TEDxSMEC
+                            {/* Map / Route Visualization Area */}
+                            <div className="app-map-area">
+                                <div className="route-line">
+                                    <div className="route-point start"></div>
+                                    <div className="route-path"></div>
+                                    <div className="route-point end"></div>
                                 </div>
-                                <div style={{ height: '80px', background: '#F3F4F6', borderRadius: '8px', width: '100%' }}></div>
-                                <div style={{ height: '40px', background: '#F9FAFB', borderRadius: '8px', width: '100%' }}></div>
+                                {/* Driver Marker */}
+                                <div className="driver-marker">
+                                    <div className="marker-sonar"></div>
+                                    <Car size={16} color="white" fill="white" />
+                                </div>
                             </div>
 
-                            {/* Decoration Element */}
-                            <div style={{ position: 'absolute', bottom: '15%', opacity: 0.1 }}>
-                                <MapPin size={200} color="#00C853" />
+                            {/* Active Ride Card */}
+                            <div className="app-card ride-card">
+                                <div className="driver-info">
+                                    <div className="driver-avatar">
+                                        <UserCheck size={20} color="#555" />
+                                    </div>
+                                    <div className="driver-details">
+                                        <div className="driver-name">Sarah M.</div>
+                                        <div className="driver-rating">★ 4.9 • Verified User</div>
+                                    </div>
+                                    <div className="ride-price">₹40</div>
+                                </div>
+                                <div className="ride-route">
+                                    <div className="route-time">
+                                        <span>09:00 AM</span>
+                                        <span className="location">Hostel Block A</span>
+                                    </div>
+                                    <div className="route-divider"></div>
+                                    <div className="route-time">
+                                        <span>09:20 AM</span>
+                                        <span className="location">TEDx Venue</span>
+                                    </div>
+                                </div>
+                                <div className="ride-action">
+                                    <button>Request Ride</button>
+                                </div>
                             </div>
                         </div>
 
-                        {/* Floating Cards */}
-                        <div className="floating-card card-top">
-                            <div style={{ background: '#E8F5E9', padding: '8px', borderRadius: '50%' }}>
-                                <Search size={20} color="#00C853" />
+                        {/* Anchored Trust Badge - Replaces Floating Cards */}
+                        <div className="trust-badge">
+                            <div className="trust-avatars">
+                                <div className="avatar"></div>
+                                <div className="avatar"></div>
+                                <div className="avatar"></div>
                             </div>
-                            <div>
-                                <div style={{ fontSize: '12px', color: '#757575' }}>Launching at</div>
-                                <div style={{ fontWeight: 'bold', fontSize: '14px' }}>TEDxSMEC</div>
-                            </div>
-                        </div>
-
-                        <div className="floating-card card-bottom">
-                            <div style={{ background: '#E3F2FD', padding: '8px', borderRadius: '50%' }}>
-                                <UserCheck size={20} color="#1565C0" />
-                            </div>
-                            <div>
-                                <div style={{ fontSize: '12px', color: '#757575' }}>Trusted</div>
-                                <div style={{ fontWeight: 'bold', fontSize: '14px' }}>Student Community</div>
+                            <div className="trust-text">
+                                <span>Now in</span>
+                                <strong>Private Beta</strong>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

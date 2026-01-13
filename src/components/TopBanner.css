@@ -21,6 +21,13 @@
     font-weight: 700;
 }
 
+@media (max-width: 600px) {
+    .top-banner {
+        font-size: 0.75rem;
+        padding: 8px 0;
+    }
+}
+
 /* Push navbar down */
 /* This class will be toggled or applied to navbar */
 .navbar-with-banner {

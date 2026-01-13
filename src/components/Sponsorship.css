@@ -96,7 +96,44 @@
 }
 
 @media (max-width: 768px) {
+    .sponsorship-section {
+        padding: 6rem 0 8rem;
+    }
+
     .sponsorship-section h2 {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
+        padding: 0 1rem;
+    }
+
+    .sponsorship-section p {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+        padding: 0 1rem;
+    }
+
+    .sponsor-logos {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .logo-divider {
+        display: none;
+        /* Hide X on mobile for cleaner stack */
+    }
+
+    .logo-divider::after {
+        content: '+';
+        /* Maybe use + instead or just gap */
+        display: block;
+        transform: rotate(0);
+    }
+
+    .logo-box {
+        padding: 1.25rem 2rem;
+        font-size: 1.25rem;
+        width: 100%;
+        max-width: 260px;
+        display: flex;
+        justify-content: center;
     }
 }
