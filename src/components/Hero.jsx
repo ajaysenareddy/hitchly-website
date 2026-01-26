@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="hero-content">
                 <div className="hero-text fade-in-up">
                     <div className="hero-tag">
-                        <ShieldCheck size={18} /> Launching Live at TEDxSMEC
+                        <ShieldCheck size={18} /> Beta Version Coming Soon
                     </div>
                     <h1>
                         Easy, Safe & Efficient<br />
@@ -17,7 +17,7 @@ const Hero = () => {
                     <p>
                         Experience the future of mobility. Hitchly connects you with verified peers for safe and affordable rides.
                         <br /><br />
-                        <strong>We are launching our Beta exclusively at TEDxSMEC.</strong>
+                        <strong>We are currently in beta testing and will be rolling out soon.</strong>
                     </p>
 
                     <div className="hero-actions" style={{ marginBottom: '2rem' }}>
@@ -32,14 +32,14 @@ const Hero = () => {
                         }}>
                             <span style={{ fontWeight: 700, color: '#00C853', fontSize: '1.1rem', letterSpacing: '-0.5px' }}>Coming Soon</span>
                             <div style={{ height: '20px', width: '2px', background: 'rgba(0, 200, 83, 0.2)' }}></div>
-                            <span style={{ color: '#0A0F1C', fontWeight: 500 }}>Live at TEDxSMEC</span>
+                            <span style={{ color: '#0A0F1C', fontWeight: 500 }}>Beta Rollout</span>
                         </div>
                     </div>
 
                     <div className="hero-stats">
                         <div className="stat-item">
-                            <h3>TEDxSMEC</h3>
-                            <p>Official Launch</p>
+                            <h3>Beta</h3>
+                            <p>Testing Phase</p>
                         </div>
                         <div className="stat-item">
                             <h3>100%</h3>
@@ -94,13 +94,13 @@ const Hero = () => {
                                 </div>
                                 <div className="ride-route">
                                     <div className="route-time">
-                                        <span>09:00 AM</span>
-                                        <span className="location">Hostel Block A</span>
+                                        <span>08:00 AM</span>
+                                        <span className="location">Alwal</span>
                                     </div>
                                     <div className="route-divider"></div>
                                     <div className="route-time">
-                                        <span>09:20 AM</span>
-                                        <span className="location">TEDx Venue</span>
+                                        <span>09:00 AM</span>
+                                        <span className="location">Hightec City</span>
                                     </div>
                                 </div>
                                 <div className="ride-action">

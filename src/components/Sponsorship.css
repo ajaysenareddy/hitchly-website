@@ -54,6 +54,99 @@
     line-height: 1.6;
 }
 
+/* Trust Indicators */
+.trust-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.trust-badge:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.trust-badge svg {
+    color: var(--color-primary);
+}
+
+/* Beta Progress */
+.beta-progress {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 2rem;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.progress-label {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.progress-percentage {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.progress-track {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 75%;
+    background: linear-gradient(90deg, var(--color-primary), #00E676);
+    border-radius: 10px;
+    animation: progressLoad 2s ease forwards;
+}
+
+@keyframes progressLoad {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+.progress-note {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
 .sponsor-logos {
     display: flex;
     align-items: center;
@@ -83,10 +176,6 @@
     transform: scale(1.05);
 }
 
-.tedx-logo span {
-    color: #E62B1E;
-    /* TED Red */
-}
 
 .hitchly-logo {
     color: var(--color-primary);
@@ -111,6 +200,23 @@
         padding: 0 1rem;
     }
 
+    .trust-indicators {
+        gap: 1rem;
+    }
+
+    .trust-badge {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+
+    .beta-progress {
+        padding: 1.5rem;
+    }
+
+    .progress-percentage {
+        font-size: 1.25rem;
+    }
+
     .sponsor-logos {
         flex-direction: column;
         gap: 1.5rem;
@@ -118,14 +224,6 @@
 
     .logo-divider {
         display: none;
-        /* Hide X on mobile for cleaner stack */
-    }
-
-    .logo-divider::after {
-        content: '+';
-        /* Maybe use + instead or just gap */
-        display: block;
-        transform: rotate(0);
     }
 
     .logo-box {

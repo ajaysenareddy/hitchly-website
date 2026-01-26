@@ -16,7 +16,7 @@ const Navbar = () => {
         {/* Desktop Links */}
         <div className="nav-links">
           <a href="#features" className="nav-link">Features</a>
-          <a href="#sponsorship" className="nav-link">TEDxSMEC</a>
+          <a href="#sponsorship" className="nav-link">Beta Info</a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className={`mobile-menu ${isOpen ? 'active' : ''}`}>
           <div className="mobile-nav-links">
             <a href="#features" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Features</a>
-            <a href="#sponsorship" className="mobile-nav-link" onClick={() => setIsOpen(false)}>TEDxSMEC</a>
+            <a href="#sponsorship" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Beta Info</a>
           </div>
         </div>
       </div>
