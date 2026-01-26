@@ -107,6 +107,13 @@
     cursor: not-allowed;
 }
 
+.form-helper-text {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin-top: 1rem;
+}
+
 .error-message-inline {
     display: flex;
     align-items: center;

@@ -62,8 +62,8 @@ const BetaSignup = () => {
                         <div className="success-message-inline">
                             <CheckCircle size={32} />
                             <div>
-                                <h3>Request Submitted!</h3>
-                                <p>We'll get back to you soon with beta access details.</p>
+                                <h3>Email Ready!</h3>
+                                <p>Please send the email from your email app to complete your request.</p>
                             </div>
                         </div>
                     ) : (
@@ -98,7 +98,7 @@ const BetaSignup = () => {
                                     className="submit-btn-inline"
                                     disabled={status === 'loading'}
                                 >
-                                    {status === 'loading' ? 'Sending...' : 'Request Access'}
+                                    {status === 'loading' ? 'Opening Email...' : "I'm Interested"}
                                 </button>
                             </div>
 
@@ -108,6 +108,10 @@ const BetaSignup = () => {
                                     <span>{errorMessage}</span>
                                 </div>
                             )}
+
+                            <p className="form-helper-text">
+                                Clicking "I'm Interested" will open your email app with a pre-filled message to send.
+                            </p>
                         </form>
                     )}
                 </div>
