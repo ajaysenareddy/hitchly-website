@@ -378,22 +378,12 @@
 
 @media (max-width: 576px) {
     .hero {
-        padding-top: var(--spacing-2xl);
+        padding-top: 140px;
         padding-bottom: var(--spacing-xl);
     }
 
     .hero-tag {
-        font-size: 0.75rem;
-        padding: 8px 14px;
-        gap: 0.4rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 100%;
-    }
-
-    .hero-tag svg {
-        flex-shrink: 0;
+        display: none;
     }
 
     .hero h1 {
