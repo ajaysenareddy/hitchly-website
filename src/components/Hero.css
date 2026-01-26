@@ -382,6 +382,20 @@
         padding-bottom: var(--spacing-xl);
     }
 
+    .hero-tag {
+        font-size: 0.75rem;
+        padding: 8px 14px;
+        gap: 0.4rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+
+    .hero-tag svg {
+        flex-shrink: 0;
+    }
+
     .hero h1 {
         font-size: 2.25rem;
         letter-spacing: -1px;

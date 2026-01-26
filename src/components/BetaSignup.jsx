@@ -28,7 +28,7 @@ const BetaSignup = () => {
 
             const body = encodeURIComponent(
                 `Hey Hitchly Team 👋\n\n` +
-                `I just discovered Hitchly and I’m already excited — I’d love to join the beta and take it for a spin! 😄\n\n` +
+                `I just discovered Hitchly and I am already excited. I would love to join the beta and try it out 😄\n\n` +
                 `Here’s a little about me:\n` +
                 `👤 Name: ${formData.fullName}\n` +
                 `📧 Email: ${formData.email}\n\n` +
