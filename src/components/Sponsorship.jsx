@@ -1,5 +1,5 @@
 import React from 'react';
-import { Car, Shield, Lock, HeadphonesIcon, CheckCircle } from 'lucide-react';
+import { Shield, Lock, Navigation, CheckCircle } from 'lucide-react';
 import './Sponsorship.css';
 
 const Sponsorship = () => {
@@ -26,25 +26,23 @@ const Sponsorship = () => {
                             <span>Secure Payments</span>
                         </div>
                         <div className="trust-badge">
-                            <HeadphonesIcon size={20} />
-                            <span>24/7 Support</span>
-                        </div>
-                        <div className="trust-badge">
-                            <CheckCircle size={20} />
-                            <span>Quality Assured</span>
+                            <Navigation size={20} />
+                            <span>Real-time GPS</span>
                         </div>
                     </div>
 
                     {/* Beta Progress */}
-                    <div className="beta-progress">
-                        <div className="progress-header">
-                            <span className="progress-label">Beta Testing Progress</span>
-                            <span className="progress-percentage">75%</span>
+                    {/* Project Status */}
+                    <div className="project-status">
+                        <div className="status-item">
+                            <span className="status-label">Current Phase</span>
+                            <span className="status-value active-phase">Public Beta</span>
                         </div>
-                        <div className="progress-track">
-                            <div className="progress-fill"></div>
+                        <div className="status-divider"></div>
+                        <div className="status-item">
+                            <span className="status-label">Next Milestone</span>
+                            <span className="status-value">Official Launch Q2 2026</span>
                         </div>
-                        <p className="progress-note">Expected full launch: Q2 2026</p>
                     </div>
 
                     <div className="sponsor-logos">

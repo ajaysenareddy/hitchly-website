@@ -30,7 +30,7 @@ const features = [
     {
         icon: <Shield size={32} />,
         title: 'Secure Requests',
-        desc: 'Trust is key. Vet co-travelers through profiles before accepting any ride request.',
+        desc: 'Clear ride details and transparent requests help you make confident travel decisions.',
         badge: 'Verified',
         stat: '100%',
         statLabel: 'profiles'
@@ -41,37 +41,39 @@ const Features = () => {
     const [hoveredCard, setHoveredCard] = useState(null);
 
     return (
-        <section id="features" className="section features-section container">
-            <div className="text-center" style={{ maxWidth: '700px', margin: '0 auto' }}>
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--color-secondary)', fontWeight: 700 }}>
-                    Easy, Safe & <span className="text-primary">Efficient</span>
-                </h2>
-                <p style={{ color: 'var(--color-text-light)', fontSize: '1.15rem' }}>
-                    Everything you need to commute confidently and efficiently.
-                </p>
-            </div>
+        <section id="features" className="section features-section">
+            <div className="container">
+                <div className="section-header">
+                    <h2 className="section-title">
+                        Easy, Safe & <span className="text-primary">Efficient</span>
+                    </h2>
+                    <p className="section-subtitle">
+                        Everything you need to commute confidently and efficiently.
+                    </p>
+                </div>
 
-            <div className="features-grid">
-                {features.map((f, i) => (
-                    <div
-                        className={`feature-card ${hoveredCard === i ? 'active' : ''}`}
-                        key={i}
-                        onMouseEnter={() => setHoveredCard(i)}
-                        onMouseLeave={() => setHoveredCard(null)}
-                    >
-                        <div className="feature-header">
-                            <div className="feature-icon">{f.icon}</div>
-                            <span className="feature-badge">{f.badge}</span>
+                <div className="features-grid">
+                    {features.map((f, i) => (
+                        <div
+                            className={`feature-card ${hoveredCard === i ? 'active' : ''}`}
+                            key={i}
+                            onMouseEnter={() => setHoveredCard(i)}
+                            onMouseLeave={() => setHoveredCard(null)}
+                        >
+                            <div className="feature-header">
+                                <div className="feature-icon">{f.icon}</div>
+                                <span className="feature-badge">{f.badge}</span>
+                            </div>
+                            <h3>{f.title}</h3>
+                            <p>{f.desc}</p>
+                            <div className="feature-stat">
+                                <div className="stat-value">{f.stat}</div>
+                                <div className="stat-label">{f.statLabel}</div>
+                                <CheckCircle className="stat-check" size={16} />
+                            </div>
                         </div>
-                        <h3>{f.title}</h3>
-                        <p>{f.desc}</p>
-                        <div className="feature-stat">
-                            <div className="stat-value">{f.stat}</div>
-                            <div className="stat-label">{f.statLabel}</div>
-                            <CheckCircle className="stat-check" size={16} />
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </section>
     );

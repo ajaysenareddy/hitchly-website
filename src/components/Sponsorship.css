@@ -3,7 +3,7 @@
     color: white;
     position: relative;
     overflow: hidden;
-    padding: 10rem 0;
+    padding: var(--spacing-2xl) 0;
     margin: 0;
 }
 
@@ -17,6 +17,7 @@
     bottom: 0;
     background-image: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 20%),
         radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 20%);
+    pointer-events: none;
 }
 
 .sponsorship-container {
@@ -72,7 +73,7 @@
     padding: 12px 20px;
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
+    transition: transform 0.2s ease;
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -80,71 +81,56 @@
 .trust-badge:hover {
     background: rgba(255, 255, 255, 0.15);
     border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 .trust-badge svg {
     color: var(--color-primary);
 }
 
-/* Beta Progress */
-.beta-progress {
+/* Project Status */
+.project-status {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
-    padding: 2rem;
+    padding: 2rem 3rem;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    margin-bottom: 2rem;
-}
-
-.progress-header {
+    margin-bottom: 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    gap: 4rem;
 }
 
-.progress-label {
+.status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 600;
-    font-size: 1rem;
 }
 
-.progress-percentage {
+.status-value {
     font-size: 1.5rem;
     font-weight: 700;
+    color: white;
+}
+
+.status-value.active-phase {
     color: var(--color-primary);
 }
 
-.progress-track {
-    height: 8px;
+.status-divider {
+    width: 1px;
+    height: 40px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 1rem;
-}
-
-.progress-fill {
-    height: 100%;
-    width: 75%;
-    background: linear-gradient(90deg, var(--color-primary), #00E676);
-    border-radius: 10px;
-    animation: progressLoad 2s ease forwards;
-}
-
-@keyframes progressLoad {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 75%;
-    }
-}
-
-.progress-note {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0;
 }
 
 .sponsor-logos {
@@ -209,12 +195,19 @@
         font-size: 0.85rem;
     }
 
-    .beta-progress {
-        padding: 1.5rem;
+    .project-status {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
     }
 
-    .progress-percentage {
-        font-size: 1.25rem;
+    .status-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .status-value {
+        font-size: 1.35rem;
     }
 
     .sponsor-logos {

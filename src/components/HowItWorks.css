@@ -1,33 +1,18 @@
 .how-it-works-section {
     background: white;
-    padding: 6rem 0;
+    padding: var(--spacing-xl) 0;
     position: relative;
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 4rem;
-}
 
-.section-header h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--color-secondary);
-    margin-bottom: 1rem;
-}
-
-.section-header p {
-    font-size: 1.15rem;
-    color: var(--color-text-light);
-}
 
 .steps-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
 
 .timeline-line {
@@ -158,6 +143,17 @@
     50% {
         opacity: 0.5;
         transform: scale(1.2);
+    }
+}
+
+@media (max-width: 1200px) {
+    .steps-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .timeline-line {
+        display: none;
     }
 }
 

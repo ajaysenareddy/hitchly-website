@@ -37,9 +37,9 @@ const Stats = () => {
     return (
         <section className="stats-section">
             <div className="container">
-                <div className="stats-header">
-                    <h2>Current <span className="text-primary">Status</span></h2>
-                    <p>Transparent updates from our ongoing beta phase</p>
+                <div className="section-header">
+                    <h2 className="section-title">Current <span className="text-primary">Status</span></h2>
+                    <p className="section-subtitle">Transparent updates from our ongoing beta phase</p>
                 </div>
 
                 <div className="stats-grid">

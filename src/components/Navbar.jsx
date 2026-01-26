@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Car, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -9,7 +9,6 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container nav-container">
         <a href="#" className="logo">
-          <Car className="logo-icon" size={28} strokeWidth={2.5} />
           Hitchly <span className="beta-tag">Beta</span>
         </a>
 
@@ -17,6 +16,7 @@ const Navbar = () => {
         <div className="nav-links">
           <a href="#features" className="nav-link">Features</a>
           <a href="#sponsorship" className="nav-link">Beta Info</a>
+          <a href="#beta-signup" className="nav-link">Join Beta</a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -29,6 +29,7 @@ const Navbar = () => {
           <div className="mobile-nav-links">
             <a href="#features" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Features</a>
             <a href="#sponsorship" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Beta Info</a>
+            <a href="#beta-signup" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Join Beta</a>
           </div>
         </div>
       </div>
