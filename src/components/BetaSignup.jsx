@@ -24,14 +24,16 @@ const BetaSignup = () => {
 
         try {
             // Create email content
-            const subject = encodeURIComponent('Beta Access Request - Hitchly');
+            const subject = encodeURIComponent('🚀 Hitchly Beta — Count Me In!');
+
             const body = encodeURIComponent(
-                `Hi Hitchly Team,\n\n` +
-                `I would like to request early access to the Hitchly beta.\n\n` +
-                `Full Name: ${formData.fullName}\n` +
-                `Email: ${formData.email}\n\n` +
-                `---\n` +
-                `Submitted: ${new Date().toLocaleString()}`
+                `Hey Hitchly Team 👋\n\n` +
+                `I just discovered Hitchly and I’m already excited — I’d love to join the beta and take it for a spin! 😄\n\n` +
+                `Here’s a little about me:\n` +
+                `👤 Name: ${formData.fullName}\n` +
+                `📧 Email: ${formData.email}\n\n` +
+                `Looking forward to sharing rides, saving costs, and being part of the Hitchly journey 🚗💚\n\n` +
+                `Talk soon!\n`
             );
 
             // Open user's email client
