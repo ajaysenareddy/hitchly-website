@@ -23,23 +23,20 @@ const BetaSignup = () => {
         setErrorMessage('');
 
         try {
-            // Create email content
-            const subject = encodeURIComponent('🚀 Hitchly Beta — Count Me In!');
+            const subject = encodeURIComponent('Hitchly Beta Count Me In');
 
             const body = encodeURIComponent(
-                `Hey Hitchly Team 👋\n\n` +
-                `I just discovered Hitchly and I am already excited. I would love to join the beta and try it out 😄\n\n` +
-                `Here’s a little about me:\n` +
-                `👤 Name: ${formData.fullName}\n` +
-                `📧 Email: ${formData.email}\n\n` +
-                `Looking forward to sharing rides, saving costs, and being part of the Hitchly journey 🚗💚\n\n` +
+                `Hey Hitchly Team,\n\n` +
+                `I just discovered Hitchly and I am already excited. I would love to join the beta and try it out.\n\n` +
+                `Here is a little about me:\n` +
+                `Name: ${formData.fullName}\n` +
+                `Email: ${formData.email}\n\n` +
+                `Looking forward to sharing rides, saving costs, and being part of the Hitchly journey.\n\n` +
                 `Talk soon!\n`
             );
 
-            // Open user's email client
             window.location.href = `mailto:hitchlyride@gmail.com?subject=${subject}&body=${body}`;
 
-            // Show success after a brief delay
             setTimeout(() => {
                 setStatus('success');
                 setFormData({ fullName: '', email: '' });
@@ -116,6 +113,41 @@ const BetaSignup = () => {
                             </p>
                         </form>
                     )}
+
+                    {/* Hitchly Beta APK QR Code */}
+                    <div className="qr-divider">
+                        <span>or scan to download</span>
+                    </div>
+
+                    <div className="qr-section">
+                        <div className="qr-image-wrapper">
+                            <div className="qr-ring"></div>
+                            <a
+                                href="https://drive.google.com/drive/folders/1OgF1t7DKK37hhRRcx1j3u7_tvzl4hTk1"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Download Hitchly Beta APK"
+                            >
+                                <img
+                                    src="/images/Hitchly_Beta.png"
+                                    alt="Scan to download Hitchly Beta APK"
+                                    className="qr-image"
+                                />
+                            </a>
+                        </div>
+                        <div className="qr-cta-text">
+                            <h3>Try Hitchly Beta</h3>
+                            <p>Scan the QR code to download the Hitchly Beta APK.</p>
+                            <a
+                                href="https://drive.google.com/drive/folders/1OgF1t7DKK37hhRRcx1j3u7_tvzl4hTk1"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="qr-link-btn"
+                            >
+                                Download APK
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

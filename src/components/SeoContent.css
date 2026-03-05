@@ -47,8 +47,16 @@
 }
 
 .seo-block-icon {
-    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 48px;
+    height: 48px;
+    background: rgba(0, 200, 83, 0.1);
+    border-radius: 12px;
+    color: var(--color-primary);
     margin-bottom: 1rem;
+    padding: 10px;
 }
 
 .seo-block h3 {
