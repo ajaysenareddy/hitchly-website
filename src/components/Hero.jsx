@@ -142,7 +142,7 @@ const Hero = () => {
                                     </div>
                                 </div>
                                 <div className="ride-action">
-                                    <button onClick={handleRequestRide}>Request Ride</button>
+                                    <button onClick={handleRequestRide} aria-label="Simulate Request Ride">Request Ride</button>
                                 </div>
                             </div>
                         </div>

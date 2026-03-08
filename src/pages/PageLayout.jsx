@@ -9,16 +9,16 @@ const PageLayout = ({ title, description, children }) => {
             <Navbar />
             <main className="page-layout">
                 {title && (
-                    <div className="page-hero">
+                    <header className="page-hero">
                         <div className="container">
                             <div className="page-hero-content">
                                 <h1>{title}</h1>
                                 {description && <p className="page-description">{description}</p>}
                             </div>
                         </div>
-                    </div>
+                    </header>
                 )}
-                <div className="page-body">
+                <article className="page-body">
                     <div className="container page-container">
                         {children}
                         <div className="page-cta-block">
@@ -30,7 +30,7 @@ const PageLayout = ({ title, description, children }) => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
             </main>
         </>
     );

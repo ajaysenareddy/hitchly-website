@@ -69,7 +69,7 @@ const BetaSignup = () => {
                         <form onSubmit={handleSubmit} className="signup-form-inline">
                             <div className="form-row">
                                 <div className="form-field">
-                                    <User size={20} />
+                                    <User size={20} aria-hidden="true" />
                                     <input
                                         type="text"
                                         name="fullName"
@@ -77,11 +77,12 @@ const BetaSignup = () => {
                                         onChange={handleChange}
                                         required
                                         placeholder="Full Name"
+                                        aria-label="Full Name"
                                     />
                                 </div>
 
                                 <div className="form-field">
-                                    <Mail size={20} />
+                                    <Mail size={20} aria-hidden="true" />
                                     <input
                                         type="email"
                                         name="email"
@@ -89,6 +90,7 @@ const BetaSignup = () => {
                                         onChange={handleChange}
                                         required
                                         placeholder="Email Address"
+                                        aria-label="Email Address"
                                     />
                                 </div>
 
