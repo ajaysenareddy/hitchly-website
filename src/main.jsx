@@ -10,7 +10,7 @@ import BenefitsOfCarpooling from './pages/BenefitsOfCarpooling.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/car-pool-hyderabad" element={<CarpoolHyderabad />} />
