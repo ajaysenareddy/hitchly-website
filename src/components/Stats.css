@@ -139,7 +139,7 @@
     }
 
     .stat-card {
-        padding: 1.5rem;
+        padding: clamp(1.5rem, 5vw, 2rem);
     }
 
     .stat-value {

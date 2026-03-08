@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import SEO from './components/SEO'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Features from './components/Features'
-import Stats from './components/Stats'
-import HowItWorks from './components/HowItWorks'
-import SeoContent from './components/SeoContent'
-import Sponsorship from './components/Sponsorship'
-import BetaSignup from './components/BetaSignup'
 import TopBanner from './components/TopBanner'
+
+// Lazy load below-the-fold components for faster initial page load
+const Features = lazy(() => import('./components/Features'))
+const Stats = lazy(() => import('./components/Stats'))
+const HowItWorks = lazy(() => import('./components/HowItWorks'))
+const RouteExplorer = lazy(() => import('./components/RouteExplorer'))
+const SavingsCalculator = lazy(() => import('./components/SavingsCalculator'))
+const SeoContent = lazy(() => import('./components/SeoContent'))
+const Sponsorship = lazy(() => import('./components/Sponsorship'))
+const BetaSignup = lazy(() => import('./components/BetaSignup'))
 
 function App() {
   const homeSchema = {
@@ -43,12 +47,16 @@ function App() {
       <TopBanner />
       <Navbar />
       <Hero />
-      <Features />
-      <Stats />
-      <HowItWorks />
-      <SeoContent />
-      <Sponsorship />
-      <BetaSignup />
+      <Suspense fallback={<div style={{ minHeight: '100vh', background: '#F8FAFC' }}></div>}>
+        <HowItWorks />
+        <RouteExplorer />
+        <SavingsCalculator />
+        <Features />
+        <Stats />
+        <SeoContent />
+        <Sponsorship />
+        <BetaSignup />
+      </Suspense>
     </main>
   )
 }

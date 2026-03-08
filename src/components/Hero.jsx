@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ShieldCheck, MapPin, Search, UserCheck, Car } from 'lucide-react';
+import { ShieldCheck, MapPin, Search, UserCheck, Car, Star, Laugh } from 'lucide-react';
 import './Hero.css';
 import './LoadingModal.css';
 
@@ -126,7 +126,7 @@ const Hero = () => {
                                     </div>
                                     <div className="driver-details">
                                         <div className="driver-name">Sarah M.</div>
-                                        <div className="driver-rating">★ 4.9 • Verified User</div>
+                                        <div className="driver-rating"><Star size={14} fill="#FBBF24" color="#FBBF24" style={{ display: 'inline', verticalAlign: 'middle', marginRight: '4px' }} />4.9 • Verified User</div>
                                     </div>
                                     <div className="ride-price">₹ 100</div>
                                 </div>
@@ -168,7 +168,7 @@ const Hero = () => {
                             </div>
                             {loadingProgress === 99 && (
                                 <div className="beta-message">
-                                    <p className="joke-text">Just kidding! We're in beta 😄</p>
+                                    <p className="joke-text"><Laugh size={18} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '6px' }} />Just kidding! We're in beta</p>
                                     <p className="cta-text">Join the waitlist for early access!</p>
                                     <form onSubmit={handleSignup} className="signup-form">
                                         <input

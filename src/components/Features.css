@@ -153,7 +153,7 @@
 @media (max-width: 1200px) {
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        gap: 2rem;
     }
 }
 
@@ -166,7 +166,7 @@
 
 @media (max-width: 600px) {
     .feature-card {
-        padding: 2rem 1.5rem;
+        padding: clamp(1.5rem, 5vw, 2.5rem) clamp(1rem, 5vw, 2rem);
     }
 
     .feature-badge {

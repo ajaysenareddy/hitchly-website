@@ -198,7 +198,7 @@
     .project-status {
         flex-direction: column;
         gap: 2rem;
-        padding: 2rem;
+        padding: clamp(1.5rem, 5vw, 2rem);
     }
 
     .status-divider {

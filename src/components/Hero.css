@@ -40,8 +40,8 @@
 }
 
 .hero h1 {
-    font-size: 4rem;
-    line-height: 1.1;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    line-height: 1.15;
     margin-bottom: 1.5rem;
     color: var(--color-secondary);
     font-weight: 700;
@@ -107,8 +107,8 @@
     position: relative;
     width: 100%;
     max-width: 380px;
-    /* Phone width */
-    height: 600px;
+    height: auto;
+    aspect-ratio: 0.63;
     background: white;
     border-radius: 40px;
     box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.15);
@@ -387,9 +387,8 @@
     }
 
     .hero h1 {
-        font-size: 2.25rem;
         letter-spacing: -1px;
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
     }
 
     .hero p {
@@ -398,8 +397,9 @@
     }
 
     .hero-visual {
-        max-width: 320px;
-        height: 540px;
+        max-width: 100%;
+        width: 320px;
+        aspect-ratio: 0.6;
         border-width: 6px;
     }
 
