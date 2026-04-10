@@ -23,6 +23,7 @@ const PrivacyPolicy = () => {
             <PageLayout
                 title="Privacy Policy & Terms of Service"
                 description="Hitchly operates under strict adherence to Indian laws, the DPDP framework, and Motor Vehicles Act 1988 guidelines."
+                hideCta={true}
             >
                 <div className="policy-wrapper">
                     

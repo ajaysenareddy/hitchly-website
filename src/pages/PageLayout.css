@@ -5,9 +5,13 @@
     /* Navbar height offset */
 }
 
+.page-layout.no-navbar {
+    padding-top: 0;
+}
+
 .page-hero {
     background: linear-gradient(135deg, #0A0F1C 0%, #1a2640 100%);
-    padding: 5rem 0 4rem;
+    padding: 2.5rem 0 2rem;
     text-align: center;
 }
 
