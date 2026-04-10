@@ -1,0 +1,69 @@
+# Privacy Policy & Terms of Service for Hitchly
+
+**Effective Date:** April 2026
+**Contact Email:** hitchlyhitchlyride@gmail.com
+**Governing Law:** Laws of India (Jurisdiction: Hyderabad, Telangana)
+
+---
+
+## PART 1: TERMS OF SERVICE AND USER AGREEMENT
+
+Welcome to Hitchly! By downloading, installing, or using the Hitchly mobile application ("App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the application.
+
+### 1. Nature of the Platform (Regulatory Compliance)
+Hitchly operates strictly as an **Intermediary** software platform as defined under Section 79 of the Information Technology Act, 2000 (India). 
+* **Hitchly is NOT a transportation provider, taxi aggregator, or cab service.** 
+* The App merely provides a technological framework that allows private individuals ("Users") travelling in the same direction to connect and share the journey.
+
+### 2. Strict Adherence to the Motor Vehicles Act, 1988
+It is illegal in India to use a private vehicle (White Number Plate) for commercial public transport or generating business profit. 
+* **Cost-Sharing Only:** The monetary exchange facilitated through Hitchly is strictly limited to the sharing of travel expenses (fuel, tolls, and standard vehicle maintenance). 
+* **No Profit Generation:** Ride-Givers are expressly forbidden from utilizing Hitchly to earn an income, generate profit, or operate effectively as a commercial taxi. Hitchly systemically caps contribution amounts to reflect standard point-to-point fuel economics (typically ₹3 - ₹5 per kilometer).
+* **Compliance Duty:** Users acting as Ride-Givers take full legal responsibility for ensuring their private vehicle has valid registration, up-to-date insurance (covering passengers), and a valid Driver’s License. 
+
+### 3. Liability & Risk Assumption
+**Users participate in carpooling entirely at their own risk.**
+* Hitchly performs automated phone number authentication and offers corporate email verification to build a trusted community. However, Hitchly **does not** conduct manual criminal background checks on its users.
+* Hitchly shall not be liable for any accidents, physical injuries, loss of property, traffic violations, or disputes that occur during a ride. 
+* Users are strongly advised to exercise personal judgment, share ride details with trusted family members, and abide by all local traffic laws (including wearing seatbelts and helmets).
+
+### 4. Code of Conduct
+* No user shall transport illegal goods, weapons, or hazardous materials during a Hitchly ride.
+* Any reports of harassment, discrimination, or dangerous driving will result in an immediate, permanent ban from the platform.
+* Women-only features are strictly reserved for female users; any attempt by a male user to bypass this security feature will result in a permanent ban and potential reporting to local law enforcement.
+
+---
+
+## PART 2: PRIVACY POLICY
+
+This Privacy Policy explains how Hitchly handles your Personal Information to comply with Google Play Store policies and the Digital Personal Data Protection (DPDP) frameworks in India.
+
+### 1. Data We Collect and Why We Collect It
+
+To provide a safe and functioning carpool environment, we collect the following:
+* **Account Information:** Name, Phone Number, Profile Picture, and Corporate Email (optional for verification). This is used to build trust and accountability within the community.
+* **Location Data (CRITICAL FOR FUNCTIONALITY):** 
+  * *Foreground Location:* Used to accurately match you with nearby co-riders and suggest pick-up/drop-off points.
+  * *Background Location:* **Hitchly only accesses your background location when an active ride is in progress.** This is strictly required to provide real-time GPS tracking for your matched co-rider so they know when to meet you at the pickup point. Hitchly immediately stops tracking location once the ride is completed or cancelled. We do NOT track your location for advertising, nor do we track it when you are not in an active ride.
+* **Device Information:** IP address, device model, and OS version for debugging crashes and preventing fraudulent accounts.
+
+### 2. How Your Data is Shared
+* **With Co-Riders:** When you confirm a ride, your matched co-rider will see your First Name, Profile Picture, Rating, and Live Location (only during the ride duration). 
+* **Zero Phone Number Scraping:** Phone numbers are kept secure. In-app communication is facilitated via encrypted WebSockets to prevent exposing your private phone number to strangers.
+* **No Third-Party Selling:** Hitchly **does not** sell your personal data, travel history, or demographic profiles to third-party ad networks, marketing agencies, or data brokers.
+
+### 3. Data Localization & Security
+* All personal data is stored in highly secure, industry-standard cloud databases.
+* Chat messages between riders and drivers are transmitted via secure HTTPS/WSS protocols and are strictly contained within the context of an active ride.
+
+### 4. Data Retention and Account Deletion (Google Play Compliance)
+You have absolute control over your data.
+* **Retention:** We retain your ride history and profile data only as long as your account is active.
+* **Deletion:** You can request the complete deletion of your account and all associated personal data at any time. 
+* **How to Delete:** To request complete deletion of your account and data, email `hitchlyhitchlyride@gmail.com` with the subject "Data Deletion Request" from your registered email or phone number. All associated tracking data, active ride history, chats, and records will be purged within 14 business days.
+
+### 5. Changes to This Policy
+We may update this Privacy Policy as local laws or app features evolve. Any significant changes will be communicated via an in-app persistent notification or an email.
+
+---
+By registering an account with Hitchly, you acknowledge that you have read, understood, and agreed to this dual Terms of Service and Privacy Policy document.

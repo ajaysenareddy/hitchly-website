@@ -3,6 +3,7 @@ import SEO from './components/SEO'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import TopBanner from './components/TopBanner'
+import Footer from './components/Footer'
 
 // Lazy load below-the-fold components for faster initial page load
 const Features = lazy(() => import('./components/Features'))
@@ -57,6 +58,7 @@ function App() {
         <Sponsorship />
         <BetaSignup />
       </Suspense>
+      <Footer />
     </main>
   )
 }

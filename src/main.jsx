@@ -10,6 +10,7 @@ const CarpoolHyderabad = lazy(() => import('./pages/CarpoolHyderabad.jsx'))
 const RideShareOfficeCommute = lazy(() => import('./pages/RideShareOfficeCommute.jsx'))
 const HowHitchlyWorks = lazy(() => import('./pages/HowHitchlyWorks.jsx'))
 const BenefitsOfCarpooling = lazy(() => import('./pages/BenefitsOfCarpooling.jsx'))
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy.jsx'))
 
 // Loading fallback for Suspense
 const PageLoader = () => (
@@ -30,6 +31,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="/ride-share-office-commute" element={<RideShareOfficeCommute />} />
             <Route path="/how-hitchly-works" element={<HowHitchlyWorks />} />
             <Route path="/benefits-of-carpooling" element={<BenefitsOfCarpooling />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </Suspense>
       </BrowserRouter>

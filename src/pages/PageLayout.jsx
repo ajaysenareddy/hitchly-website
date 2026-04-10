@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import './PageLayout.css';
 
 const PageLayout = ({ title, description, children }) => {
@@ -32,6 +33,7 @@ const PageLayout = ({ title, description, children }) => {
                     </div>
                 </article>
             </main>
+            <Footer />
         </>
     );
 };
