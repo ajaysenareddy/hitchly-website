@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
                 hideCta={true}
             >
                 <div className="policy-wrapper">
-                    
+
                     {/* Meta Header */}
                     <div className="policy-header-card">
                         <div className="policy-meta-grid">
@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
                             </div>
                             <div className="policy-meta-item">
                                 <span className="policy-meta-label">Contact Email</span>
-                                <span className="policy-meta-value">hitchlyhitchlyride@gmail.com</span>
+                                <span className="policy-meta-value">hitchlyride@gmail.com</span>
                             </div>
                             <div className="policy-meta-item">
                                 <span className="policy-meta-label">Governing Law</span>
