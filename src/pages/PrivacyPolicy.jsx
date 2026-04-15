@@ -75,7 +75,7 @@ const PrivacyPolicy = () => {
                             <h3>3. Liability & Risk Assumption</h3>
                             <p><strong>Users participate in carpooling entirely at their own risk.</strong></p>
                             <ul>
-                                <li>Hitchly performs automated phone number authentication and offers corporate email verification to build a trusted community. However, Hitchly <strong>does not</strong> conduct manual criminal background checks on its users.</li>
+                                <li>Hitchly uses OTP-based phone number authentication to verify users and build a trusted community. However, Hitchly <strong>does not</strong> conduct manual criminal background checks on its users.</li>
                                 <li>Hitchly shall not be liable for any accidents, physical injuries, loss of property, traffic violations, or disputes that occur during a ride.</li>
                                 <li>Users are strongly advised to exercise personal judgment, share ride details with trusted family members, and abide by all local traffic laws (including wearing seatbelts and helmets).</li>
                             </ul>
@@ -102,7 +102,7 @@ const PrivacyPolicy = () => {
                             <h3>1. Data We Collect and Why We Collect It</h3>
                             <p>To provide a safe and functioning carpool environment, we collect the following:</p>
                             <ul>
-                                <li><strong>Account Information:</strong> Name, Phone Number, Profile Picture, and Corporate Email (optional for verification). This is used to build trust and accountability within the community.</li>
+                                <li><strong>Account Information:</strong> Name, Phone Number, and Profile Picture. This is used to build trust and accountability within the community.</li>
                                 <li><strong>Location Data (CRITICAL FOR FUNCTIONALITY):</strong>
                                     <ul>
                                         <li><em>Foreground Location:</em> Used to accurately match you with nearby co-riders and suggest pick-up/drop-off points.</li>
@@ -136,7 +136,7 @@ const PrivacyPolicy = () => {
                             <ul>
                                 <li><strong>Retention:</strong> We retain your ride history and profile data only as long as your account is active.</li>
                                 <li><strong>Deletion:</strong> You can request the complete deletion of your account and all associated personal data at any time.</li>
-                                <li><strong>How to Delete:</strong> To request complete deletion of your account and data, email <code>hitchlyhitchlyride@gmail.com</code> with the subject "Data Deletion Request" from your registered email or phone number. All associated tracking data, active ride history, chats, and records will be purged within 14 business days.</li>
+                                <li><strong>How to Delete:</strong> To request complete deletion of your account and data, email <code>hitchlyride@gmail.com</code> with the subject "Data Deletion Request" from your registered phone number. All associated tracking data, active ride history, chats, and records will be purged within 14 business days.</li>
                             </ul>
                         </div>
 
