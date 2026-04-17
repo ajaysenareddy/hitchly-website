@@ -143,7 +143,7 @@ const PrivacyPolicy = () => {
                         <div className="policy-section">
                             <h3>5. Changes to This Policy</h3>
                             <p>
-                                We may update this Privacy Policy as local laws or app features evolve. Any significant changes will be communicated via an in-app persistent notification or an email.
+                                We may update this Privacy Policy as local laws or app features evolve. Any significant changes will be communicated via an in-app persistent notification.
                             </p>
                         </div>
                     </div>
