@@ -731,10 +731,10 @@
     transform: translateX(-50%);
     background: rgba(15, 23, 42, 0.95);
     color: white;
-    padding: 16px 28px;
+    padding: 14px 24px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 1.05rem;
+    font-size: 1rem;
     z-index: 1000;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 230, 118, 0.4);
     backdrop-filter: blur(12px);
@@ -742,7 +742,22 @@
     animation: toastPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
     pointer-events: none;
     text-align: center;
-    white-space: nowrap;
+    /* No white-space:nowrap — allow wrapping */
+    white-space: normal;
+    /* Prevent overflow on any screen */
+    max-width: min(420px, calc(100vw - 32px));
+    width: max-content;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+@media (max-width: 480px) {
+    .funny-toast {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+        bottom: 24px;
+        border-radius: 20px;
+    }
 }
 
 @keyframes toastPop {
