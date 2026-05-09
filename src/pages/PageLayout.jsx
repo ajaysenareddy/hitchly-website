@@ -31,9 +31,9 @@ const PageLayout = ({ title, description, children, hideCta = false, hideNavbar 
                         {!hideCta && (
                             <div className="page-cta-block">
                                 <h2>Ready to Start Carpooling?</h2>
-                                <p>Join the Hitchly beta waitlist and be among the first to experience smart ride pooling in Hyderabad.</p>
+                                <p>Request access to the Hitchly closed alpha and be among the first to experience smart ride pooling in Hyderabad.</p>
                                 <div className="page-cta-btns">
-                                    <a href="/#beta-signup" className="btn-primary-cta">Join the Waitlist</a>
+                                    <a href="/#beta-signup" className="btn-primary-cta">Request Alpha Access</a>
                                     <Link to="/" className="btn-secondary-cta">← Back to Home</Link>
                                 </div>
                             </div>

@@ -108,8 +108,8 @@ const HowHitchlyWorks = () => {
 
                 <h2>When Does Hitchly Launch?</h2>
                 <p>
-                    Hitchly is currently in beta testing with an official launch planned for Q2 2026, starting
-                    with Hyderabad. Join the beta waitlist now to get early access, help shape the product, and
+                    Hitchly is currently in closed alpha testing with an official launch planned for Q2 2026, starting
+                    with Hyderabad. Request access to the closed alpha now to get early access, help shape the product, and
                     enjoy priority features when the app goes live. The future of office commute sharing
                     starts here.
                 </p>

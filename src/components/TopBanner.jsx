@@ -4,7 +4,7 @@ import './TopBanner.css';
 const TopBanner = () => {
     return (
         <div className="top-banner">
-            <span>BETA VERSION <strong>COMING SOON</strong></span>
+            <span>CLOSED ALPHA TESTING <strong>NOW LIVE</strong></span>
         </div>
     );
 };

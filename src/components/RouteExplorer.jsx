@@ -4,10 +4,10 @@ import './RouteExplorer.css';
 
 const funnyMessages = [
     { text: "Hold your horses! This is just a simulation.", icon: <Laugh size={18} /> },
-    { text: "Beep beep! Beta phase parking only.", icon: <Car size={18} /> },
+    { text: "Beep beep! Alpha phase parking only.", icon: <Car size={18} /> },
     { text: "Whoa there! Real rides coming soon.", icon: <Rocket size={18} /> },
     { text: "Your chauffeur is currently rendering...", icon: <Loader size={18} /> },
-    { text: "Fasten your seatbelt! Actually, wait for the beta.", icon: <AlertCircle size={18} /> },
+    { text: "Fasten your seatbelt! Actually, wait for the alpha.", icon: <AlertCircle size={18} /> },
     { text: "Plot twist: We're still matching you.", icon: <Activity size={18} /> },
     { text: "Drivers are busy drinking chai.", icon: <Coffee size={18} /> },
     { text: "Reticulating splines for your ride...", icon: <Zap size={18} /> }
@@ -193,7 +193,7 @@ const RouteExplorer = () => {
                         <div className="explorer-footer text-center">
                             <p>These are simulated profiles for {selectedRoute.from} to {selectedRoute.to}.</p>
                             <a href="#beta-signup" className="text-primary font-weight-600 hover-underline">
-                                Join the beta to see real matches →
+                                Request alpha access to see real matches →
                             </a>
                         </div>
                     </div>

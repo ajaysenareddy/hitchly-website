@@ -5,7 +5,7 @@ import './Stats.css';
 const stats = [
     {
         icon: <TestTube size={32} />,
-        value: 'Beta',
+        value: 'Alpha',
         label: 'Testing Phase',
         sublabel: 'limited users onboarded',
         color: '#2196F3'
@@ -27,7 +27,7 @@ const stats = [
     {
         icon: <Clock size={32} />,
         value: 'Soon',
-        label: 'Public Beta',
+        label: 'Public Launch',
         sublabel: 'rolling out shortly',
         color: '#9C27B0'
     }
@@ -39,7 +39,7 @@ const Stats = () => {
             <div className="container">
                 <div className="section-header">
                     <h2 className="section-title">Current <span className="text-primary">Status</span></h2>
-                    <p className="section-subtitle">Transparent updates from our ongoing beta phase</p>
+                    <p className="section-subtitle">Transparent updates from our ongoing alpha phase</p>
                 </div>
 
                 <div className="stats-grid">

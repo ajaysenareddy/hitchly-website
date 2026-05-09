@@ -96,8 +96,8 @@ const RideShareOfficeCommute = () => {
 
                 <h2>Start Sharing Your Office Commute Today</h2>
                 <p>
-                    Hitchly is launching its beta soon, starting with Hyderabad's most active commute corridors.
-                    Sign up for the waitlist and be one of the first professionals to experience smarter,
+                    Hitchly's closed alpha is live now, starting with Hyderabad's most active commute corridors.
+                    Request access and be one of the first professionals to experience smarter,
                     cheaper, and more social daily commute ride share in India. Your office commute will
                     never feel the same again.
                 </p>

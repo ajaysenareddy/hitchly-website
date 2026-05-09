@@ -7,12 +7,12 @@ const Sponsorship = () => {
         <section id="sponsorship" className="sponsorship-section">
             <div className="container sponsorship-container">
                 <div className="sponsor-content">
-                    <span className="sponsor-label">Beta Testing Phase</span>
-                    <h2>Hitchly Beta</h2>
+                    <span className="sponsor-label">Closed Alpha Phase</span>
+                    <h2>Hitchly Alpha</h2>
                     <p>
-                        We are currently in beta testing to ensure the best possible experience for our users.
-                        The beta version will be rolled out soon with enhanced features for safe, efficient, and sustainable carpooling.
-                        Join our waitlist to be among the first to experience the future of mobility.
+                        We are currently running a closed alpha testing phase to ensure the best possible experience for our users.
+                        The alpha version has been rolled out with enhanced features for safe, efficient, and sustainable carpooling.
+                        Request access to be among the first to experience the future of mobility.
                     </p>
 
                     {/* Trust Indicators */}
@@ -31,12 +31,12 @@ const Sponsorship = () => {
                         </div>
                     </div>
 
-                    {/* Beta Progress */}
+                    {/* Alpha Progress */}
                     {/* Project Status */}
                     <div className="project-status">
                         <div className="status-item">
                             <span className="status-label">Current Phase</span>
-                            <span className="status-value active-phase">Public Beta</span>
+                            <span className="status-value active-phase">Closed Alpha</span>
                         </div>
                         <div className="status-divider"></div>
                         <div className="status-item">

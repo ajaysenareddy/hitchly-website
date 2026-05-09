@@ -26,8 +26,8 @@ const Hero = () => {
     const handleSignup = (e) => {
         e.preventDefault();
         if (email) {
-            const subject = encodeURIComponent('Beta Access Request - Hitchly');
-            const body = encodeURIComponent(`Hi Hitchly Team,\n\nI would like to request early access to the Hitchly beta.\n\nEmail: ${email}\n\nThank you!`);
+            const subject = encodeURIComponent('Alpha Access Request - Hitchly');
+            const body = encodeURIComponent(`Hi Hitchly Team,\n\nI would like to request early access to the Hitchly alpha.\n\nEmail: ${email}\n\nThank you!`);
             window.location.href = `mailto:hitchlyride@gmail.com?subject=${subject}&body=${body}`;
             setShowModal(false);
             setLoadingProgress(0);
@@ -46,7 +46,7 @@ const Hero = () => {
             <div className="hero-content">
                 <div className="hero-text fade-in-up">
                     <div className="hero-tag">
-                        <ShieldCheck size={18} /> Beta Version Coming Soon
+                        <ShieldCheck size={18} /> Closed Alpha Testing Now Live
                     </div>
                     <h1>
                         Easy, Safe & Efficient<br />
@@ -55,7 +55,7 @@ const Hero = () => {
                     <p>
                         Experience the future of mobility. Hitchly connects you with verified peers for safe and affordable rides.
                         <br /><br />
-                        <strong>We are currently in beta testing and will be rolling out soon.</strong>
+                        <strong>We are currently running closed alpha testing.</strong>
                     </p>
 
                     <div className="hero-actions" style={{ marginBottom: '2rem' }}>
@@ -70,13 +70,13 @@ const Hero = () => {
                         }}>
                             <span style={{ fontWeight: 700, color: '#00C853', fontSize: '1.1rem', letterSpacing: '-0.5px' }}>Coming Soon</span>
                             <div style={{ height: '20px', width: '2px', background: 'rgba(0, 200, 83, 0.2)' }}></div>
-                            <span style={{ color: '#0A0F1C', fontWeight: 500 }}>Beta Rollout</span>
+                            <span style={{ color: '#0A0F1C', fontWeight: 500 }}>Alpha Testing</span>
                         </div>
                     </div>
 
                     <div className="hero-stats">
                         <div className="stat-item">
-                            <h3>Beta</h3>
+                            <h3>Alpha</h3>
                             <p>Testing Phase</p>
                         </div>
                         <div className="stat-item">
@@ -84,7 +84,7 @@ const Hero = () => {
                             <p>Verified Profiles</p>
                         </div>
                         <div className="stat-item">
-                            <h3>Beta</h3>
+                            <h3>Alpha</h3>
                             <p>Early Access</p>
                         </div>
                     </div>
@@ -168,8 +168,8 @@ const Hero = () => {
                             </div>
                             {loadingProgress === 99 && (
                                 <div className="beta-message">
-                                    <p className="joke-text"><Laugh size={18} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '6px' }} />Just kidding! We're in beta</p>
-                                    <p className="cta-text">Join the waitlist for early access!</p>
+                                    <p className="joke-text"><Laugh size={18} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '6px' }} />Just kidding! We're in closed alpha</p>
+                                    <p className="cta-text">Request access to our closed alpha!</p>
                                     <form onSubmit={handleSignup} className="signup-form">
                                         <input
                                             type="email"
@@ -180,7 +180,7 @@ const Hero = () => {
                                             className="email-input"
                                         />
                                         <button type="submit" className="signup-btn">
-                                            Request Beta Access
+                                            Request Alpha Access
                                         </button>
                                     </form>
                                     <button className="close-btn-secondary" onClick={closeModal}>

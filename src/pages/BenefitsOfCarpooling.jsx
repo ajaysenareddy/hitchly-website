@@ -106,8 +106,8 @@ const BenefitsOfCarpooling = () => {
                 <h2>Start Experiencing the Benefits With Hitchly</h2>
                 <p>
                     Hitchly is bringing all these benefits to daily commuters in Hyderabad with a safe,
-                    verified, and user-friendly carpooling platform. The beta is launching in Q2 2026.
-                    Join the waitlist today and be among the first to experience smarter, greener, and
+                    verified, and user-friendly carpooling platform. The closed alpha is live now.
+                    Request access today and be among the first to experience smarter, greener, and
                     more affordable daily commuting.
                 </p>
             </PageLayout>

@@ -23,11 +23,11 @@ const BetaSignup = () => {
         setErrorMessage('');
 
         try {
-            const subject = encodeURIComponent('Hitchly Beta Count Me In');
+            const subject = encodeURIComponent('Hitchly Alpha Count Me In');
 
             const body = encodeURIComponent(
                 `Hey Hitchly Team,\n\n` +
-                `I just discovered Hitchly and I am already excited. I would love to join the beta and try it out.\n\n` +
+                `I just discovered Hitchly and I am already excited. I would love to join the closed alpha and try it out.\n\n` +
                 `Here is a little about me:\n` +
                 `Name: ${formData.fullName}\n` +
                 `Email: ${formData.email}\n\n` +
@@ -53,7 +53,7 @@ const BetaSignup = () => {
             <div className="container">
                 <div className="signup-content-inline">
                     <div className="signup-header-inline">
-                        <h2>Join the <span className="text-primary">Beta Waitlist</span></h2>
+                        <h2>Request <span className="text-primary">Alpha Access</span></h2>
                         <p>Be among the first to experience the future of carpooling</p>
                     </div>
 

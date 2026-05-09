@@ -80,11 +80,11 @@ const SeoContent = () => {
 
                 <div className="seo-cta-strip">
                     <p>
-                        Ready to reduce commute cost and travel smarter? <strong>Hitchly's beta is rolling out soon</strong>.
-                        Join the waitlist and be among the first to experience the future of shared rides for professionals in Hyderabad.
+                        Ready to reduce commute cost and travel smarter? <strong>Hitchly's closed alpha is live now</strong>.
+                        Request access and be among the first to experience the future of shared rides for professionals in Hyderabad.
                     </p>
                     <a href="#beta-signup" className="seo-cta-btn">
-                        Join the Waitlist
+                        Request Alpha Access
                         <ArrowRight size={16} />
                     </a>
                 </div>
