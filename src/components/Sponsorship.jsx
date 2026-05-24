@@ -45,7 +45,28 @@ const Sponsorship = () => {
                         </div>
                     </div>
 
-                    <div className="sponsor-logos">
+                    {/* Recognition / Credibility Booster */}
+                    <div className="sponsor-logos" style={{ flexDirection: 'column', gap: '1rem', marginTop: '1rem' }}>
+                        <span className="status-label" style={{ marginBottom: '0.5rem' }}>Recognized By</span>
+                        <div className="recognition-card" style={{ 
+                            background: 'rgba(255, 255, 255, 0.05)', 
+                            borderRadius: '24px', 
+                            padding: '1.5rem',
+                            border: '1px solid rgba(255, 255, 255, 0.1)',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            gap: '1.5rem',
+                            maxWidth: '600px',
+                            margin: '0 auto',
+                            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)'
+                        }}>
+                            <img src="/images/BITS_event.png" alt="Hitchly team at BITS Pilani Ground Reality 2026" style={{ maxWidth: '100%', height: 'auto', borderRadius: '16px', border: '2px solid rgba(0, 200, 83, 0.3)', boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }} />
+                            <div>
+                                <h3 style={{ fontSize: '1.4rem', fontWeight: 600, margin: 0, color: 'white' }}>Finalist - Ground Reality 2026</h3>
+                                <p style={{ margin: '0.5rem 0 0 0', fontSize: '1rem', color: 'rgba(255, 255, 255, 0.7)', lineHeight: 1.5 }}>Recognized as a top emerging mobility startup at BITS Pilani's premier business plan competition.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
