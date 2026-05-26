@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -7,5 +8,14 @@ export default defineConfig({
   base: '/',
   esbuild: {
     drop: ['console', 'debugger'],
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        'privacy-policy': resolve(__dirname, 'privacy-policy/index.html'),
+        'delete-account': resolve(__dirname, 'delete-account/index.html'),
+      },
+    },
   },
 })
