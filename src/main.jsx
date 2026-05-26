@@ -11,6 +11,7 @@ const RideShareOfficeCommute = lazy(() => import('./pages/RideShareOfficeCommute
 const HowHitchlyWorks = lazy(() => import('./pages/HowHitchlyWorks.jsx'))
 const BenefitsOfCarpooling = lazy(() => import('./pages/BenefitsOfCarpooling.jsx'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy.jsx'))
+const DeleteAccount = lazy(() => import('./pages/DeleteAccount.jsx'))
 
 // Loading fallback for Suspense
 const PageLoader = () => (
@@ -32,6 +33,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="/how-hitchly-works" element={<HowHitchlyWorks />} />
             <Route path="/benefits-of-carpooling" element={<BenefitsOfCarpooling />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/delete-account" element={<DeleteAccount />} />
           </Routes>
         </Suspense>
       </BrowserRouter>

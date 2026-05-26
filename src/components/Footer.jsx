@@ -40,6 +40,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-links">
                     <Link to="/privacy-policy" className="footer-link">Privacy Policy & Terms</Link>
+                    <Link to="/delete-account" className="footer-link">Delete Account</Link>
                     <a href="mailto:support@hitchly.in" className="footer-link">Support</a>
                 </div>
             </div>
