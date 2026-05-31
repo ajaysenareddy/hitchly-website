@@ -106,9 +106,8 @@ const BenefitsOfCarpooling = () => {
                 <h2>Start Experiencing the Benefits With Hitchly</h2>
                 <p>
                     Hitchly is bringing all these benefits to daily commuters in Hyderabad with a safe,
-                    verified, and user-friendly carpooling platform. The closed alpha is live now.
-                    Request access today and be among the first to experience smarter, greener, and
-                    more affordable daily commuting.
+                    verified, and user-friendly carpooling platform. The official app is now live on the Google Play Store.
+                    Download the app today and start experiencing smarter, greener, and more affordable daily commuting.
                 </p>
             </PageLayout>
         </>

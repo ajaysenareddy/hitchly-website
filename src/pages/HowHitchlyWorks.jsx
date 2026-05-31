@@ -106,12 +106,9 @@ const HowHitchlyWorks = () => {
                     records create a safe, accountable environment for daily commute ride share in India.
                 </p>
 
-                <h2>When Does Hitchly Launch?</h2>
+                <h2>Get Started Today!</h2>
                 <p>
-                    Hitchly is currently in closed alpha testing with an official launch planned for Q2 2026, starting
-                    with Hyderabad. Request access to the closed alpha now to get early access, help shape the product, and
-                    enjoy priority features when the app goes live. The future of office commute sharing
-                    starts here.
+                    Hitchly is officially live on the Google Play Store! Start carpooling, saving on commute costs, and traveling safely with verified professionals in Hyderabad. Download the app now and join the future of office commute sharing today.
                 </p>
             </PageLayout>
         </>

@@ -31,9 +31,9 @@ const PageLayout = ({ title, description, children, hideCta = false, hideNavbar 
                         {!hideCta && (
                             <div className="page-cta-block">
                                 <h2>Ready to Start Carpooling?</h2>
-                                <p>Request access to the Hitchly closed alpha and be among the first to experience smart ride pooling in Hyderabad.</p>
+                                <p>Download the official Hitchly app from the Google Play Store today and start smart ride pooling in Hyderabad.</p>
                                 <div className="page-cta-btns">
-                                    <a href="/#beta-signup" className="btn-primary-cta">Request Alpha Access</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.hitchly" target="_blank" rel="noopener noreferrer" className="btn-primary-cta">Download App</a>
                                     <Link to="/" className="btn-secondary-cta">← Back to Home</Link>
                                 </div>
                             </div>

@@ -7,12 +7,10 @@ const Sponsorship = () => {
         <section id="sponsorship" className="sponsorship-section">
             <div className="container sponsorship-container">
                 <div className="sponsor-content">
-                    <span className="sponsor-label">Closed Alpha Phase</span>
-                    <h2>Hitchly Alpha</h2>
+                    <span className="sponsor-label">App Store Release</span>
+                    <h2>Now Live in Hyderabad</h2>
                     <p>
-                        We are currently running a closed alpha testing phase to ensure the best possible experience for our users.
-                        The alpha version has been rolled out with enhanced features for safe, efficient, and sustainable carpooling.
-                        Request access to be among the first to experience the future of mobility.
+                        Hitchly is now live for all commuters in Hyderabad! Download our app today to start sharing rides, matching with co-passengers in real-time, and experiencing hassle-free daily commuting. We have built robust verification systems, secure features, and real-time tracking to ensure your safety and comfort.
                     </p>
 
                     {/* Trust Indicators */}
@@ -31,17 +29,16 @@ const Sponsorship = () => {
                         </div>
                     </div>
 
-                    {/* Alpha Progress */}
                     {/* Project Status */}
                     <div className="project-status">
                         <div className="status-item">
-                            <span className="status-label">Current Phase</span>
-                            <span className="status-value active-phase">Closed Alpha</span>
+                            <span className="status-label">Current Status</span>
+                            <span className="status-value active-phase">Live on Play Store</span>
                         </div>
                         <div className="status-divider"></div>
                         <div className="status-item">
-                            <span className="status-label">Next Milestone</span>
-                            <span className="status-value">Official Launch Q2 2026</span>
+                            <span className="status-label">Availability</span>
+                            <span className="status-value">Hyderabad Region</span>
                         </div>
                     </div>
 

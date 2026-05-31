@@ -133,3 +133,31 @@
         /* But hidden by opacity/pointer-events */
     }
 }
+
+.nav-link.active-download {
+    background-color: var(--color-primary);
+    color: white !important;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 200, 83, 0.2);
+}
+
+.nav-link.active-download:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 200, 83, 0.3);
+}
+
+.mobile-nav-link.active-download {
+    background-color: var(--color-primary);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px auto;
+    width: fit-content;
+    box-shadow: 0 4px 12px rgba(0, 200, 83, 0.2);
+}

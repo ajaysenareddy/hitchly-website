@@ -5,30 +5,30 @@ import './Stats.css';
 const stats = [
     {
         icon: <TestTube size={32} />,
-        value: 'Alpha',
-        label: 'Testing Phase',
-        sublabel: 'limited users onboarded',
-        color: '#2196F3'
+        value: 'Live',
+        label: 'App Release',
+        sublabel: 'v1.0 on Play Store',
+        color: '#00C853'
     },
     {
         icon: <Users size={32} />,
-        value: 'Closed',
+        value: 'Public',
         label: 'User Access',
-        sublabel: 'invite-based testing',
-        color: '#00C853'
+        sublabel: 'open to everyone',
+        color: '#2196F3'
     },
     {
         icon: <Settings size={32} />,
         value: 'Active',
         label: 'Core Features',
-        sublabel: 'ride posting & discovery',
+        sublabel: 'ride matching & pooling',
         color: '#FF9800'
     },
     {
         icon: <Clock size={32} />,
-        value: 'Soon',
-        label: 'Public Launch',
-        sublabel: 'rolling out shortly',
+        value: 'Online',
+        label: 'Live Updates',
+        sublabel: 'continuous improvements',
         color: '#9C27B0'
     }
 ];
@@ -39,7 +39,7 @@ const Stats = () => {
             <div className="container">
                 <div className="section-header">
                     <h2 className="section-title">Current <span className="text-primary">Status</span></h2>
-                    <p className="section-subtitle">Transparent updates from our ongoing alpha phase</p>
+                    <p className="section-subtitle">Transparent updates from our official public release</p>
                 </div>
 
                 <div className="stats-grid">

@@ -1,121 +1,47 @@
-import React, { useState } from 'react';
-import { Mail, User, CheckCircle, AlertCircle } from 'lucide-react';
+import React from 'react';
+import { ArrowRight } from 'lucide-react';
 import './BetaSignup.css';
 
 const BetaSignup = () => {
-    const [formData, setFormData] = useState({
-        fullName: '',
-        email: ''
-    });
-    const [status, setStatus] = useState('idle'); // idle, loading, success, error
-    const [errorMessage, setErrorMessage] = useState('');
-
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setStatus('loading');
-        setErrorMessage('');
-
-        try {
-            const subject = encodeURIComponent('Hitchly Alpha Count Me In');
-
-            const body = encodeURIComponent(
-                `Hey Hitchly Team,\n\n` +
-                `I just discovered Hitchly and I am already excited. I would love to join the closed alpha and try it out.\n\n` +
-                `Here is a little about me:\n` +
-                `Name: ${formData.fullName}\n` +
-                `Email: ${formData.email}\n\n` +
-                `Looking forward to sharing rides, saving costs, and being part of the Hitchly journey.\n\n` +
-                `Talk soon!\n`
-            );
-
-            window.location.href = `mailto:hitchlyride@gmail.com?subject=${subject}&body=${body}`;
-
-            setTimeout(() => {
-                setStatus('success');
-                setFormData({ fullName: '', email: '' });
-            }, 500);
-        } catch (error) {
-            console.error('Error:', error);
-            setStatus('error');
-            setErrorMessage('Failed to open email client. Please email us directly at hitchlyride@gmail.com');
-        }
-    };
+    const playStoreUrl = "https://play.google.com/store/apps/details?id=com.hitchly";
+    const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(playStoreUrl)}&color=00c853&bgcolor=ffffff`;
 
     return (
         <section id="beta-signup" className="beta-signup-section">
             <div className="container">
-                <div className="signup-content-inline">
+                <div className="signup-content-inline" style={{ maxWidth: '800px' }}>
                     <div className="signup-header-inline">
-                        <h2>Request <span className="text-primary">Alpha Access</span></h2>
-                        <p>Be among the first to experience the future of carpooling</p>
+                        <h2>Download <span className="text-primary">Hitchly</span> Today</h2>
+                        <p>Join verified professionals sharing daily office commutes in Hyderabad. Safe, convenient, and affordable.</p>
                     </div>
 
-                    {status === 'success' ? (
-                        <div className="success-message-inline">
-                            <CheckCircle size={32} />
-                            <div>
-                                <h3>Email Ready!</h3>
-                                <p>Please send the email from your email app to complete your request.</p>
-                            </div>
+                    <div className="qr-divider">OR</div>
+
+                    <div className="qr-section">
+                        <div className="qr-image-wrapper">
+                            <div className="qr-ring"></div>
+                            <img 
+                                src={qrImageUrl} 
+                                alt="Hitchly Play Store QR Code" 
+                                className="qr-image"
+                            />
                         </div>
-                    ) : (
-                        <form onSubmit={handleSubmit} className="signup-form-inline">
-                            <div className="form-row">
-                                <div className="form-field">
-                                    <User size={20} aria-hidden="true" />
-                                    <input
-                                        type="text"
-                                        name="fullName"
-                                        value={formData.fullName}
-                                        onChange={handleChange}
-                                        required
-                                        placeholder="Full Name"
-                                        aria-label="Full Name"
-                                    />
-                                </div>
 
-                                <div className="form-field">
-                                    <Mail size={20} aria-hidden="true" />
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        required
-                                        placeholder="Email Address"
-                                        aria-label="Email Address"
-                                    />
-                                </div>
-
-                                <button
-                                    type="submit"
-                                    className="submit-btn-inline"
-                                    disabled={status === 'loading'}
-                                >
-                                    {status === 'loading' ? 'Opening Email...' : "I'm Interested"}
-                                </button>
-                            </div>
-
-                            {status === 'error' && (
-                                <div className="error-message-inline">
-                                    <AlertCircle size={18} />
-                                    <span>{errorMessage}</span>
-                                </div>
-                            )}
-
-                            <p className="form-helper-text">
-                                Clicking "I'm Interested" will open your email app with a pre-filled message to send.
+                        <div className="qr-cta-text">
+                            <h3>Scan to Download</h3>
+                            <p>
+                                Scan this QR code with your mobile camera to open Hitchly directly on the Google Play Store.
                             </p>
-                        </form>
-                    )}
-
+                            <a 
+                                href={playStoreUrl}
+                                className="qr-link-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Get it on Google Play <ArrowRight size={18} />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

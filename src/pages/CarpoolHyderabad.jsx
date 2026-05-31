@@ -88,9 +88,7 @@ const CarpoolHyderabad = () => {
 
                 <h2>Join Hitchly — Hyderabad's Trusted Carpool Platform</h2>
                 <p>
-                    Hitchly is currently in closed alpha testing, with a full launch planned for Q2 2026. Request access to the closed alpha
-                    today to get early access, priority matching, and exclusive alpha-tester benefits. Be part of
-                    the ride sharing revolution in Hyderabad — one shared commute at a time.
+                    Hitchly is officially live on the Google Play Store! Download the official app today to get instant matching, verified co-passengers, and seamless commutes. Be part of the ride sharing revolution in Hyderabad — one shared commute at a time.
                 </p>
             </PageLayout>
         </>

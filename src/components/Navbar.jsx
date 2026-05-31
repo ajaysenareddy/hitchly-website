@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="navbar" style={!isHome ? { top: 0 } : undefined}>
       <div className="container nav-container">
         <Link to="/" className="logo">
-          Hitchly <span className="beta-tag">Alpha</span>
+          Hitchly <span className="beta-tag">Live</span>
         </Link>
 
         {isHome && (
@@ -20,8 +20,8 @@ const Navbar = () => {
             {/* Desktop Links */}
             <div className="nav-links">
               <a href="#features" className="nav-link">Features</a>
-              <a href="#sponsorship" className="nav-link">Alpha Info</a>
-              <a href="#beta-signup" className="nav-link">Join Alpha</a>
+              <a href="#sponsorship" className="nav-link">Highlights</a>
+              <a href="#beta-signup" className="nav-link active-download">Download App</a>
             </div>
 
             {/* Mobile Menu Toggle */}
@@ -33,8 +33,8 @@ const Navbar = () => {
             <div className={`mobile-menu ${isOpen ? 'active' : ''}`}>
               <div className="mobile-nav-links">
                 <a href="#features" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Features</a>
-                <a href="#sponsorship" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Alpha Info</a>
-                <a href="#beta-signup" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Join Alpha</a>
+                <a href="#sponsorship" className="mobile-nav-link" onClick={() => setIsOpen(false)}>Highlights</a>
+                <a href="#beta-signup" className="mobile-nav-link active-download" onClick={() => setIsOpen(false)}>Download App</a>
               </div>
             </div>
           </>
