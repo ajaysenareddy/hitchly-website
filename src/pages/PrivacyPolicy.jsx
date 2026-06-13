@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
                             </div>
                             <div className="policy-meta-item">
                                 <span className="policy-meta-label">Contact Email</span>
-                                <span className="policy-meta-value">hitchlyride@gmail.com</span>
+                                <span className="policy-meta-value">support@hitchly.in</span>
                             </div>
                             <div className="policy-meta-item">
                                 <span className="policy-meta-label">Governing Law</span>
@@ -136,7 +136,7 @@ const PrivacyPolicy = () => {
                             <ul>
                                 <li><strong>Retention:</strong> We retain your ride history and profile data only as long as your account is active.</li>
                                 <li><strong>Deletion:</strong> You can request the complete deletion of your account and all associated personal data at any time.</li>
-                                <li><strong>How to Delete:</strong> To request complete deletion of your account and data, email <code>hitchlyride@gmail.com</code> with the subject "Data Deletion Request" from your registered phone number. All associated tracking data, active ride history, chats, and records will be purged within 14 business days.</li>
+                                <li><strong>How to Delete:</strong> To request complete deletion of your account and data, email <code>support@hitchly.in</code> with the subject "Data Deletion Request" from your registered phone number. All associated tracking data, active ride history, chats, and records will be purged within 14 business days.</li>
                             </ul>
                         </div>
 

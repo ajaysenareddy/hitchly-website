@@ -35,7 +35,7 @@ const DeleteAccount = () => {
                             </div>
                             <div className="policy-meta-item">
                                 <span className="policy-meta-label">Contact Email</span>
-                                <span className="policy-meta-value">hitchlyride@gmail.com</span>
+                                <span className="policy-meta-value">support@hitchly.in</span>
                             </div>
                             <div className="policy-meta-item">
                                 <span className="policy-meta-label">Data Removed</span>
@@ -54,7 +54,7 @@ const DeleteAccount = () => {
 
                         <div className="policy-section">
                             <h3>Step 1: Send a Deletion Request Email</h3>
-                            <p>Send an email to <strong>hitchlyride@gmail.com</strong> with the following details:</p>
+                            <p>Send an email to <strong>support@hitchly.in</strong> with the following details:</p>
                             <ul>
                                 <li><strong>Subject:</strong> <code>Account Deletion Request</code></li>
                                 <li><strong>Registered Phone Number:</strong> The phone number linked to your Hitchly account (e.g. +91 XXXXX XXXXX)</li>
@@ -101,7 +101,7 @@ const DeleteAccount = () => {
                         <p>
                             Once your account is deleted, this action is <strong>permanent and cannot be undone</strong>.
                             You will need to create a new account if you wish to use Hitchly again in the future.
-                            For any questions, contact us at <strong>hitchlyride@gmail.com</strong>.
+                            For any questions, contact us at <strong>support@hitchly.in</strong>.
                         </p>
                     </div>
 

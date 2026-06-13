@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +13,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
       font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -30,6 +37,7 @@
       display: flex;
       align-items: center;
     }
+
     .nav-logo {
       font-size: 1.25rem;
       font-weight: 700;
@@ -39,6 +47,7 @@
       align-items: center;
       gap: 10px;
     }
+
     .nav-logo .badge {
       font-size: 0.65rem;
       font-weight: 600;
@@ -56,12 +65,14 @@
       text-align: center;
       padding: 64px 24px 56px;
     }
+
     .hero h1 {
       font-size: clamp(1.75rem, 4vw, 2.5rem);
       font-weight: 700;
       margin-bottom: 16px;
       line-height: 1.2;
     }
+
     .hero p {
       font-size: 1rem;
       color: #94A3B8;
@@ -87,6 +98,7 @@
       gap: 32px;
       margin-bottom: 48px;
     }
+
     .meta-item .label {
       font-size: 0.625rem;
       font-weight: 700;
@@ -95,6 +107,7 @@
       color: #64748B;
       margin-bottom: 6px;
     }
+
     .meta-item .value {
       font-size: 0.9rem;
       font-weight: 600;
@@ -105,6 +118,7 @@
     section {
       margin-bottom: 40px;
     }
+
     section h2 {
       font-size: 1.1rem;
       font-weight: 700;
@@ -113,16 +127,19 @@
       padding-bottom: 10px;
       border-bottom: 2px solid #E2E8F0;
     }
+
     section p {
       font-size: 0.9rem;
       line-height: 1.8;
       color: #4A5568;
       margin-bottom: 14px;
     }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     ul li {
       font-size: 0.9rem;
       line-height: 1.8;
@@ -131,7 +148,11 @@
       position: relative;
       border-bottom: 1px solid #F1F5F9;
     }
-    ul li:last-child { border-bottom: none; }
+
+    ul li:last-child {
+      border-bottom: none;
+    }
+
     ul li::before {
       content: '→';
       position: absolute;
@@ -146,6 +167,7 @@
       list-style: none;
       padding: 0;
     }
+
     .steps li {
       counter-increment: steps;
       display: flex;
@@ -154,7 +176,11 @@
       padding: 14px 0;
       border-bottom: 1px solid #F1F5F9;
     }
-    .steps li:last-child { border-bottom: none; }
+
+    .steps li:last-child {
+      border-bottom: none;
+    }
+
     .steps li::before {
       content: counter(steps);
       min-width: 28px;
@@ -170,12 +196,16 @@
       flex-shrink: 0;
       margin-top: 2px;
     }
+
     .steps li span {
       font-size: 0.9rem;
       line-height: 1.7;
       color: #4A5568;
     }
-    .steps li strong { color: #1A202C; }
+
+    .steps li strong {
+      color: #1A202C;
+    }
 
     /* Warning box */
     .warning-box {
@@ -189,7 +219,10 @@
       color: #7A5C00;
       line-height: 1.7;
     }
-    .warning-box strong { color: #5C4500; }
+
+    .warning-box strong {
+      color: #5C4500;
+    }
 
     /* CTA email button */
     .email-btn {
@@ -207,7 +240,10 @@
       margin-top: 12px;
       transition: background 0.2s;
     }
-    .email-btn:hover { background: #00A846; }
+
+    .email-btn:hover {
+      background: #00A846;
+    }
 
     /* Highlight */
     .highlight {
@@ -230,14 +266,26 @@
       padding: 24px;
       font-size: 0.8rem;
     }
-    footer a { color: #00C853; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
+
+    footer a {
+      color: #00C853;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
 
     @media (max-width: 600px) {
-      .meta-card { flex-direction: column; gap: 16px; padding: 20px; }
+      .meta-card {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <nav>
@@ -258,7 +306,7 @@
       </div>
       <div class="meta-item">
         <div class="label">Contact</div>
-        <div class="value">hitchlyride@gmail.com</div>
+        <div class="value">support@hitchly.in</div>
       </div>
       <div class="meta-item">
         <div class="label">Processing Time</div>
@@ -268,7 +316,8 @@
 
     <section>
       <h2>What Gets Deleted</h2>
-      <p>When you request account deletion, the following data will be permanently and irreversibly removed from Hitchly's systems:</p>
+      <p>When you request account deletion, the following data will be permanently and irreversibly removed from
+        Hitchly's systems:</p>
       <ul>
         <li>Your profile — name, phone number, and profile picture</li>
         <li>Your complete ride history (as driver and co-rider)</li>
@@ -281,22 +330,28 @@
 
     <section>
       <h2>How to Delete Your Account</h2>
-      <p>Hitchly uses OTP-based phone number authentication. To verify ownership and prevent unauthorized deletion, please follow these steps:</p>
+      <p>Hitchly uses OTP-based phone number authentication. To verify ownership and prevent unauthorized deletion,
+        please follow these steps:</p>
 
       <ul class="steps">
         <li><span>Open the Hitchly app and go to <strong>Profile → Settings → Delete Account</strong>.</span></li>
-        <li><span>Alternatively, send a deletion request email to <strong>hitchlyride@gmail.com</strong> with the subject line <strong>"Data Deletion Request"</strong>.</span></li>
-        <li><span>In the email body, include your <strong>registered phone number</strong> (the one you used to sign up) so we can locate your account.</span></li>
-        <li><span>We will confirm receipt within 2 business days and complete the full deletion within <strong>14 business days</strong>.</span></li>
+        <li><span>Alternatively, send a deletion request email to <strong>support@hitchly.in</strong> with the subject
+            line <strong>"Data Deletion Request"</strong>.</span></li>
+        <li><span>In the email body, include your <strong>registered phone number</strong> (the one you used to sign up)
+            so we can locate your account.</span></li>
+        <li><span>We will confirm receipt within 2 business days and complete the full deletion within <strong>14
+              business days</strong>.</span></li>
       </ul>
 
-      <a class="email-btn" href="mailto:hitchlyride@gmail.com?subject=Data%20Deletion%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20deletion%20of%20my%20Hitchly%20account%20and%20all%20associated%20data.%0A%0ARegistered%20Phone%20Number%3A%20%2B91%0A%0APlease%20confirm%20upon%20completion.%0A%0AThank%20you.">
+      <a class="email-btn"
+        href="mailto:support@hitchly.in?subject=Data%20Deletion%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20deletion%20of%20my%20Hitchly%20account%20and%20all%20associated%20data.%0A%0ARegistered%20Phone%20Number%3A%20%2B91%0A%0APlease%20confirm%20upon%20completion.%0A%0AThank%20you.">
         ✉ Send Deletion Request Email
       </a>
     </section>
 
     <div class="warning-box">
-      <strong>⚠ This action is irreversible.</strong> Once your account is deleted, your data cannot be recovered. Any active rides will be cancelled. If you later wish to use Hitchly again, you will need to create a new account.
+      <strong>⚠ This action is irreversible.</strong> Once your account is deleted, your data cannot be recovered. Any
+      active rides will be cancelled. If you later wish to use Hitchly again, you will need to create a new account.
     </div>
 
     <section>
@@ -311,19 +366,24 @@
 
     <section>
       <h2>Questions or Concerns</h2>
-      <p>If you have any questions about your data or the deletion process, please contact us at <strong>hitchlyride@gmail.com</strong>. We are committed to responding within 2 business days.</p>
-      <p>You can also read our full <a href="/privacy-policy" style="color:#00C853;font-weight:600;">Privacy Policy</a> for more information on how we handle your data.</p>
+      <p>If you have any questions about your data or the deletion process, please contact us at
+        <strong>support@hitchly.in</strong>. We are committed to responding within 2 business days.</p>
+      <p>You can also read our full <a href="/privacy-policy" style="color:#00C853;font-weight:600;">Privacy Policy</a>
+        for more information on how we handle your data.</p>
     </section>
 
     <div class="highlight">
-      By using Hitchly, you can trust that your data is yours. We do not sell personal data and we fully support your right to deletion under India's Digital Personal Data Protection (DPDP) Act.
+      By using Hitchly, you can trust that your data is yours. We do not sell personal data and we fully support your
+      right to deletion under India's Digital Personal Data Protection (DPDP) Act.
     </div>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Hitchly. All rights reserved. &nbsp;|&nbsp; <a href="/">Home</a> &nbsp;|&nbsp; <a href="/privacy-policy">Privacy Policy</a></p>
+    <p>&copy; 2026 Hitchly. All rights reserved. &nbsp;|&nbsp; <a href="/">Home</a> &nbsp;|&nbsp; <a
+        href="/privacy-policy">Privacy Policy</a></p>
   </footer>
 
 </body>
+
 </html>
