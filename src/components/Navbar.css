@@ -46,7 +46,13 @@
 
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.75rem;
+    align-items: center;
+}
+
+.nav-link-active {
+    color: var(--color-primary) !important;
+    font-weight: 600;
 }
 
 .nav-link {

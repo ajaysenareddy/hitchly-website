@@ -6,15 +6,61 @@ import './PageLayout.css';
 const HowHitchlyWorks = () => {
     const pageSchema = {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
             {
-                "@type": "Question",
-                "name": "How does Hitchly work?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Simply sign up, verify your corporate email or Govt ID, post your ride or find a match, and you are ready to travel."
-                }
+                "@type": "FAQPage",
+                "@id": "https://hitchly.in/how-hitchly-works#faq",
+                "url": "https://hitchly.in/how-hitchly-works",
+                "name": "How Hitchly Works — FAQs",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How does Hitchly work?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Sign up on Hitchly, verify your profile, then post your commute route or search for matching rides. Our algorithm instantly connects drivers and riders traveling the same direction. Book, track in real time, and split costs automatically."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Hitchly safe to use?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. All Hitchly users undergo profile verification before their first ride. Every trip includes real-time GPS tracking, a transparent rating system, and in-app safety features so you always travel with accountability."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How much does carpooling with Hitchly cost?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The fare is calculated automatically based on distance and the number of passengers. Typical Hyderabad commuters save ₹2,000–₹6,000 per month compared to solo driving or daily cab bookings."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Where is Hitchly available?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Hitchly is currently live in Hyderabad, covering major IT corridors including Hitech City, Gachibowli, Madhapur, Kondapur, the Financial District, and all major residential zones."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How do I download the Hitchly app?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The Hitchly app is available on the Google Play Store. Search for 'Hitchly' or visit play.google.com/store/apps/details?id=com.hitchly to download it for free."
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hitchly.in" },
+                    { "@type": "ListItem", "position": 2, "name": "How Hitchly Works", "item": "https://hitchly.in/how-hitchly-works" }
+                ]
             }
         ]
     };
@@ -24,6 +70,7 @@ const HowHitchlyWorks = () => {
             <SEO
                 title="How Hitchly Works | Simple, Safe Carpooling in Hyderabad"
                 description="Discover how Hitchly connects verified professionals in Hyderabad for safe, split-cost office commutes. 3 simple steps to a smarter daily ride."
+                keywords="how hitchly works, hitchly carpool app, how to carpool Hyderabad, carpooling steps India, ride sharing app Hyderabad"
                 canonicalUrl="/how-hitchly-works"
                 schema={pageSchema}
                 type="article"

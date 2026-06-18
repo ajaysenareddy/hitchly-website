@@ -15,7 +15,9 @@
 @media (min-width: 768px) {
     .footer-content {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -78,4 +80,31 @@
 
 .footer-social-link svg {
     flex-shrink: 0;
+}
+
+/* ── Footer navigation (landing pages) ── */
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--color-gray-200);
+    border-bottom: 1px solid var(--color-gray-200);
+    order: 10; /* pushes below brand/social row */
+}
+
+@media (min-width: 768px) {
+    .footer-nav {
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
+/* Active page link in nav */
+.nav-link-active {
+    color: var(--color-primary) !important;
+    font-weight: 600;
 }

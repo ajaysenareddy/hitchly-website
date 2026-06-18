@@ -38,8 +38,15 @@ const Footer = () => {
                         <span>Instagram</span>
                     </a>
                 </div>
+                {/* Internal navigation links — boosts crawlability of landing pages */}
+                <nav className="footer-nav" aria-label="Footer site navigation">
+                    <Link to="/car-pool-hyderabad" className="footer-link">Carpool Hyderabad</Link>
+                    <Link to="/ride-share-office-commute" className="footer-link">Office Commute</Link>
+                    <Link to="/how-hitchly-works" className="footer-link">How It Works</Link>
+                    <Link to="/benefits-of-carpooling" className="footer-link">Benefits</Link>
+                </nav>
                 <div className="footer-links">
-                    <Link to="/privacy-policy" className="footer-link">Privacy Policy & Terms</Link>
+                    <Link to="/privacy-policy" className="footer-link">Privacy Policy &amp; Terms</Link>
                     <Link to="/delete-account" className="footer-link">Delete Account</Link>
                     <a href="mailto:support@hitchly.in" className="footer-link">Support</a>
                 </div>

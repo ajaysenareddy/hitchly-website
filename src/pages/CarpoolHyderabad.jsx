@@ -6,17 +6,42 @@ import './PageLayout.css';
 const CarpoolHyderabad = () => {
     const pageSchema = {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Carpool Hyderabad: Smart Daily Commute",
-        "description": "Find the smartest carpool options in Hyderabad. Share rides from Hitec City, Gachibowli, and Madhapur.",
-        "publisher": { "@type": "Organization", "name": "Hitchly" }
+        "@graph": [
+            {
+                "@type": "Article",
+                "@id": "https://hitchly.in/car-pool-hyderabad#article",
+                "headline": "Carpool Hyderabad: Smart Daily Office Commute with Hitchly",
+                "description": "Find verified carpool partners in Hyderabad for safe, cost-saving office commutes to Hitec City, Gachibowli, and Madhapur. Save ₹2,000–₹6,000 per month.",
+                "url": "https://hitchly.in/car-pool-hyderabad",
+                "datePublished": "2025-01-01",
+                "dateModified": "2026-06-01",
+                "author": { "@type": "Organization", "name": "Hitchly", "url": "https://hitchly.in" },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Hitchly",
+                    "logo": { "@type": "ImageObject", "url": "https://hitchly.in/favicon-512x512.png" }
+                },
+                "image": "https://hitchly.in/og-image-1.jpg",
+                "inLanguage": "en-IN",
+                "about": { "@type": "Service", "name": "Carpool Hyderabad", "serviceType": "Ride Pooling" },
+                "keywords": "carpool Hyderabad, ride sharing Hyderabad, office commute sharing, Hitec City carpool, Gachibowli carpool"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hitchly.in" },
+                    { "@type": "ListItem", "position": 2, "name": "Carpool Hyderabad", "item": "https://hitchly.in/car-pool-hyderabad" }
+                ]
+            }
+        ]
     };
 
     return (
         <>
             <SEO
                 title="Carpool Hyderabad | Find Smart Office Shared Rides – Hitchly"
-                description="Looking for a carpool in Hyderabad? Hitchly connects verified professionals for safe, cost-saving office commutes to Hitec City and Gachibowli."
+                description="Looking for a carpool in Hyderabad? Hitchly connects verified professionals for safe, cost-saving office commutes to Hitec City and Gachibowli. Save up to ₹6,000/month."
+                keywords="carpool Hyderabad, Hyderabad carpool app, office ride sharing Hyderabad, Hitec City carpool, Gachibowli carpool, daily commute share Hyderabad"
                 canonicalUrl="/car-pool-hyderabad"
                 schema={pageSchema}
                 type="article"

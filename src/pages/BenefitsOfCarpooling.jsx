@@ -6,17 +6,41 @@ import './PageLayout.css';
 const BenefitsOfCarpooling = () => {
     const pageSchema = {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Benefits of Carpooling",
-        "description": "Discover the financial, environmental, and stress-saving benefits of carpooling to work in Hyderabad.",
-        "publisher": { "@type": "Organization", "name": "Hitchly" }
+        "@graph": [
+            {
+                "@type": "Article",
+                "@id": "https://hitchly.in/benefits-of-carpooling#article",
+                "headline": "Benefits of Carpooling in Hyderabad — Save Money, Time & Reduce Emissions",
+                "description": "Discover the financial, environmental, and social benefits of carpooling with Hitchly in Hyderabad. Save ₹40,000–₹80,000 annually and reduce your carbon footprint.",
+                "url": "https://hitchly.in/benefits-of-carpooling",
+                "datePublished": "2025-01-01",
+                "dateModified": "2026-06-01",
+                "author": { "@type": "Organization", "name": "Hitchly", "url": "https://hitchly.in" },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Hitchly",
+                    "logo": { "@type": "ImageObject", "url": "https://hitchly.in/favicon-512x512.png" }
+                },
+                "image": "https://hitchly.in/og-image-1.jpg",
+                "inLanguage": "en-IN",
+                "keywords": "benefits of carpooling, why carpool Hyderabad, reduce commute cost, carpooling savings India, green commuting Hyderabad"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hitchly.in" },
+                    { "@type": "ListItem", "position": 2, "name": "Benefits of Carpooling", "item": "https://hitchly.in/benefits-of-carpooling" }
+                ]
+            }
+        ]
     };
 
     return (
         <>
             <SEO
                 title="Benefits of Carpooling | Save Money & Time – Hitchly"
-                description="Explore the true benefits of carpooling in Hyderabad. Cut your monthly commute costs by 50%, reduce carbon emissions, and network with verified professionals."
+                description="Explore the true benefits of carpooling in Hyderabad. Cut your monthly commute costs by 50–75%, reduce carbon emissions, and network with verified professionals."
+                keywords="benefits of carpooling, carpooling advantages, reduce commute cost Hyderabad, carpool savings India, eco-friendly commuting, office ride sharing benefits"
                 canonicalUrl="/benefits-of-carpooling"
                 schema={pageSchema}
                 type="article"

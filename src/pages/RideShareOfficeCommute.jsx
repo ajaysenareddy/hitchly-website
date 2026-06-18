@@ -6,17 +6,41 @@ import './PageLayout.css';
 const RideShareOfficeCommute = () => {
     const pageSchema = {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Ride Share for Office Commute",
-        "description": "How to make your daily office commute faster, cheaper, and less stressful with ride sharing.",
-        "publisher": { "@type": "Organization", "name": "Hitchly" }
+        "@graph": [
+            {
+                "@type": "Article",
+                "@id": "https://hitchly.in/ride-share-office-commute#article",
+                "headline": "Ride Share for Office Commute in Hyderabad — Save ₹50,000/year with Hitchly",
+                "description": "Transform your daily drive to work with Hitchly's office commute ride sharing. Match with verified professionals on your exact route and split fuel costs.",
+                "url": "https://hitchly.in/ride-share-office-commute",
+                "datePublished": "2025-01-01",
+                "dateModified": "2026-06-01",
+                "author": { "@type": "Organization", "name": "Hitchly", "url": "https://hitchly.in" },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Hitchly",
+                    "logo": { "@type": "ImageObject", "url": "https://hitchly.in/favicon-512x512.png" }
+                },
+                "image": "https://hitchly.in/og-image-1.jpg",
+                "inLanguage": "en-IN",
+                "keywords": "ride share office commute, office commute sharing Hyderabad, carpool for work, daily commute ride share India, shared rides professionals"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://hitchly.in" },
+                    { "@type": "ListItem", "position": 2, "name": "Ride Share Office Commute", "item": "https://hitchly.in/ride-share-office-commute" }
+                ]
+            }
+        ]
     };
 
     return (
         <>
             <SEO
                 title="Ride Share for Office Commute | Share Commute Costs – Hitchly"
-                description="Transform your daily drive to work with Hitchly's office commute ride sharing. Match with colleagues or verified professionals on your exact route."
+                description="Transform your daily drive to work with Hitchly's office commute ride sharing. Match with colleagues or verified professionals on your exact route. Save ₹50,000+ per year."
+                keywords="ride share office commute, office commute sharing Hyderabad, carpool for work Hyderabad, daily commute ride share India, shared rides for professionals"
                 canonicalUrl="/ride-share-office-commute"
                 schema={pageSchema}
                 type="article"

@@ -74,8 +74,25 @@
     margin-bottom: 0.85rem;
 }
 
-.seo-block p:last-child {
-    margin-bottom: 0;
+.seo-block p:last-of-type {
+    margin-bottom: 0.85rem;
+}
+
+.seo-internal-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.seo-internal-link:hover {
+    gap: 0.55rem;
+    color: var(--color-primary);
 }
 
 /* CTA strip */

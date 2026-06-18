@@ -82,7 +82,7 @@
     flex-direction: column;
 }
 
-.stat-item h3 {
+.stat-item .stat-val {
     font-size: 1.75rem;
     font-weight: 700;
     color: var(--color-secondary);
@@ -414,7 +414,7 @@
         justify-content: center;
     }
 
-    .stat-item h3 {
+    .stat-item .stat-val {
         font-size: 1.5rem;
     }
 }

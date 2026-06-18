@@ -116,15 +116,15 @@ const Hero = () => {
 
                     <div className="hero-stats">
                         <div className="stat-item">
-                            <h3>Live</h3>
+                            <p className="stat-val">Live</p>
                             <p>On Play Store</p>
                         </div>
                         <div className="stat-item">
-                            <h3>100%</h3>
+                            <p className="stat-val">100%</p>
                             <p>Verified Users</p>
                         </div>
                         <div className="stat-item">
-                            <h3>Free</h3>
+                            <p className="stat-val">Free</p>
                             <p>To Download</p>
                         </div>
                     </div>

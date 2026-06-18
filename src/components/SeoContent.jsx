@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Users, TrendingDown, MapPin, ArrowRight } from 'lucide-react';
 import './SeoContent.css';
 
@@ -35,6 +36,9 @@ const SeoContent = () => {
                             preferred time. No more detours, no more empty cars. Just efficient, cost-sharing commutes
                             between real people with verified profiles. Carpool Hyderabad the smart way.
                         </p>
+                        <Link to="/car-pool-hyderabad" className="seo-internal-link" aria-label="Learn more about carpooling in Hyderabad">
+                            Carpool Hyderabad — Learn More <ArrowRight size={14} />
+                        </Link>
                     </div>
 
                     {/* Block 2 */}
@@ -54,6 +58,9 @@ const SeoContent = () => {
                             NH 65, and city flyovers. Ride sharing Hyderabad is not just good for your wallet.
                             It is better for the environment, cutting down carbon emissions with every shared trip.
                         </p>
+                        <Link to="/benefits-of-carpooling" className="seo-internal-link" aria-label="Discover the benefits of carpooling">
+                            Benefits of Carpooling — Discover More <ArrowRight size={14} />
+                        </Link>
                     </div>
 
                     {/* Block 3 */}
@@ -75,6 +82,9 @@ const SeoContent = () => {
                             professionals who have already switched to shared rides and are enjoying more comfortable,
                             affordable, and social morning commutes.
                         </p>
+                        <Link to="/how-hitchly-works" className="seo-internal-link" aria-label="See how Hitchly works step by step">
+                            How Hitchly Works — See the Steps <ArrowRight size={14} />
+                        </Link>
                     </div>
                 </div>
 
@@ -82,10 +92,10 @@ const SeoContent = () => {
                     <p>
                         Ready to reduce commute cost and travel smarter? <strong>Hitchly is now live on the Google Play Store!</strong> Download the official app today to experience the future of shared rides for professionals in Hyderabad.
                     </p>
-                    <a 
-                        href="https://play.google.com/store/apps/details?id=com.hitchly" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                    <a
+                        href="https://play.google.com/store/apps/details?id=com.hitchly"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="seo-cta-btn"
                     >
                         Download App
